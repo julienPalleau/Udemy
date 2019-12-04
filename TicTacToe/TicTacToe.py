@@ -1,5 +1,6 @@
 number = 1
 count = 5
+cpt = 0
 mylist = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
 
@@ -68,16 +69,22 @@ def player2():
 
 
 def winnerdetection():
-    i = 0
-    j = 0
-    if (mylist[i][j] == mylist[i][j+1]) and (mylist[i][j] == (mylist[i][j+2])):
-        return 1
-    if (mylist[i][j] == mylist[i+1][j]) and (mylist[i][j] == (mylist[i+2][j])):
-        return 1
-    if (mylist[0][0] == mylist[1][1]) and (mylist[0][0] == (mylist[2][2])):
-        return 1
-    if (mylist[2][0] == mylist[1][1]) and (mylist[2][0] == (mylist[0][2])):
-        return 1
+    cpt = 0
+    for x in range(0, 3):
+        for y in range(0, 2):
+            if (mylist[x][y] == mylist[x][y+1]):
+                cpt += 1
+
+            if (cpt == 2):
+                return 1
+
+    for y in range(0, 3):
+        for x in range(0, 2):
+            if (mylist[x][y] == mylist[x+1][y]):
+                cpt += 1
+
+            if (cpt == 2):
+                return 1
 
 
 def winendgame():
