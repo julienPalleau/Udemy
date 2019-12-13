@@ -48,5 +48,5 @@ class Cylinder:
 
 
 c = Cylinder(2, 3)
-print(Cylinder.volume(c))
-print(Cylinder.surface_area(c))
+print(c.volume())
+print(c.surface_area())
