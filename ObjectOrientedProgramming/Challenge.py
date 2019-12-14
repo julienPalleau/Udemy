@@ -35,8 +35,19 @@ print("\n")
 print(acct1.Owner())
 print(acct1.Balance())
 print("\n")
-print(acct1.Deposit(100))
-print("\n")
-print(acct1.Withdraw(200))
-print("\n")
-print(acct1.Withdraw(1000))
+answer = input("Souhaitez vous faire un depot o/n :")
+while (answer == "o"):
+    depotAnswer = int(
+        input("Veuillez indiquer le montant de votre depot : "))
+    acct1.Deposit(depotAnswer)
+    print(acct1.Balance())
+    answer = input("Souhaitez vous faire un nouveau depot o/n: ")
+
+
+answer = input("Souhaitez vous faire un retrait o/n :")
+while (answer == "o"):
+    retraitAnswer = int(
+        input("Veuillez indiquer le montant de votre retrait : "))
+    acct1.Withdraw(retraitAnswer)
+    print(acct1.Balance())
+    answer = input("Souhaitez vous faire un nouveau retrait o/n: ")
