@@ -20,7 +20,7 @@ class Account:
 
     def Withdraw(self, withdraw):
         self.withdraw = withdraw
-        if (self.withdraw < self.balance):
+        if (self.withdraw <= self.balance):
             self.balance -= self.withdraw
             return f"Votre retrait de {self.withdraw} euros est accepte \
                 \nVotre nouvelle balance est de : {self.balance} euros"
