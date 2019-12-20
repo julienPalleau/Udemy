@@ -35,3 +35,7 @@ s = 'hello'
 iter_s = iter(s)
 print(next(iter_s))
 print(next(iter_s))
+
+""" Problem4 """
+""" If the output has the potential of taking up a large amount of memory and
+you only intend to iterate through it, you want to use a generator. 
