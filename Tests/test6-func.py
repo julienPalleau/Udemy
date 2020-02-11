@@ -1,4 +1,5 @@
 from math import pi
+import random
 # Functions are first-class citizens in Python.
 
 # They can be passed as arguments to other functions,
@@ -49,3 +50,8 @@ list1 = []
 for i in range(2, 101, 2):
     list1.append(i)
 print(list(list1))
+
+
+for i in range(1, 7):
+    j = random.choice(range(1, 7))
+    print(j)
