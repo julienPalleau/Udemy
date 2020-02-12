@@ -55,3 +55,22 @@ print(list(list1))
 for i in range(1, 7):
     j = random.choice(range(1, 7))
     print(j)
+
+print("")
+
+
+phrase = "Bonjour tout le monde"
+lettre_a_chercher = "o"
+compteur = 0
+for lettre in phrase:
+    if lettre == lettre_a_chercher:
+        compteur += 1
+print(compteur)
+
+# Here is a more pythonic solution
+lettre_a_chercher = "o"
+phrase = "Bonjour tout le monde"
+print(phrase.lower().count(lettre_a_chercher))
+
+ma_liste = ["Pierre", "Paul", "Marie"]
+print(ma_liste[0])
