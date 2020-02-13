@@ -206,9 +206,42 @@ phrase = "Bonjour tout le monde"
 print(phrase.lower().count(lettre_a_chercher))
 
 # Exercice 16
-# Notions abordees: les listes
+# Notions abordees: les listes.
 # On retourne aux bases de Python dans cet exercice dans lequel vous devez tout simplement recuperer le premier element de la liste.
 # Dans cet exemple, vous devez printer la chiane de caractere 'Pierre'
 # ma_liste = ["Pierre", "Paul", "Marie"]
 ma_liste = ["Pierre", "Paul", "Marie"]
 print(ma_liste[0])
+
+# Exercice 17
+# Notions abordees: les listes.
+# On monte d'un cran dans cet exercice, dans lequel vous devez recuperer plusieurs elements de la liste.
+# Pour reussir cet exercice, vous devez printer le premier element ('Pierre'), le dernier element('Marie'), les deux premieres elements ('[Pierre','Paul]')
+# et les deux derniers elements (['Paul','Marie])
+ma_liste = ["Pierre", "Paul", "Marie"]
+print(ma_liste[0])
+print(ma_liste[-1])
+print(ma_liste[0:2])
+print(ma_liste[1:])
+
+# Exercice 18
+# Notions abordees: les listes.
+# On continue avec les listes. Cetter fois-ci, l'objectif de l'exercice est de recuperer un element sur deux dans la liste.
+# Votre scritp doit donc printer la liste suivante: [1, 3, 5, 7, 9]
+ma_liste = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(ma_liste[0:11:2])
+
+# Exericie 19
+# Notions abordeeL les listes.
+# Un autre petit exercice assez simple avec les listes, qui utilise une fonction qui n'est pas forcement connue de tous.
+# Le but de cette exercice est d'ajouter plusieurs elements dans une liste en une seule fois !
+# Mais attention, vous devez ajouter plusieurs elements dans la liste original, et non pas imbriquer une liste dans une autre.
+# La liste de depart contient les elements 1, 2 et 3.
+# La liste finale doit contenir les elements 1, 2, 3, 4, 5 et 6. Vous devez donc ajouter les elements 4, 5 et 6 à la liste originale.
+ma_liste = [1, 2, 3]
+ma_liste = [1, 2, 3] + [4, 5, 6]
+print(ma_liste)
+# In a more pythonic way
+ma_liste = [1, 2, 3]
+ma_liste.extend([4, 5, 6])
+print(ma_liste)
