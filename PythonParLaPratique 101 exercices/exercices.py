@@ -449,3 +449,112 @@ print("Nombre tronqué: {nombres:.{decimales}f}".format(
     nombres=nombre, decimales=decimale))
 
 print("test de la valeur toto: {toto}".format(toto=decimale))
+
+print("\n Exercice36")
+# Exercice 36
+# Notions abordees: structures conditionnelles.
+a = 20
+print("Vous etes majeur !") if a >= 18 else print("Vous etes minieur")
+
+print("\n Exercice37")
+# Exercice 37
+# Age du chien
+age = int(input("Entrer l'age du chien: "))
+result = 0
+if (age < 0):
+    print("Vous devez entrer un age positif!")
+elif (age <= 2):
+    result = age * 10.5
+    print("l'age du chien est {0} ans a l'echelle humaine".format(result))
+else:
+    result = 21 + (age - 2) * 4
+    print("l'age du chien est %d ans a l'echelle humaine" % result)
+
+print("\n Exercice38")
+# Exercice 38
+# Notions abordees: Fonctions de base.
+# Dans cet exercice, nous allons trier trois nombres sans avoir recours à l'utilisation de structures conditionnelles
+# ni à la fonction sort(). A l'aide des fonctions de base de Python, vous allez devoir trouver un moyen de trier les
+# variables 'a', 'b', 'c' du plus petit au plus grand.
+# Dans le cas de cet exercice, avec a = 4, b = 6 et c = 2, votre script doit printer:'les nombres dans l'ordre sont 2, 4 et 6'.
+a = 4
+b = 6
+c = 2
+a1 = min(a, b, c)
+a3 = max(a, b, c)
+a2 = (a + b + c) - a1 - a3
+print("Les nombres dans l'ordre sont {}, {} et {}".format(a1, a2, a3))
+
+print("\n Exercice40")
+# Exercice 40
+# On continue avec les boucles, cette fois-ci la boucle for.
+# Le but de cet exercice est de printer l'index de chaque lettre du mot 'Python'.
+# Votre script doit donc retourner:
+# 0
+# 1
+# 2
+# 3
+# 4
+# 5
+
+mot = "Python"
+for i in range(len(mot)):
+    print(i)
+
+print("\n Exercice41")
+# Exercice 41
+# Dans cet exercice, la fonction 'multiplicateur_mot' retourne une erreur.
+# Trouvez cette erreur et modifiez la fonction pour qu'elle ne retourne plus d'erreur. Il y a plusieurs facons de fixer cetter erreur.
+# Votre script doit afficher 5 fois le mot 'Bonjour' à la suite (parce que dans la vie, il est important de faire des scripts bien eleves...)
+
+
+def multiplicateur_mot(mot, mult=5):
+    return mot * mult
+
+
+mot_multiplie = multiplicateur_mot(mot="Bonjour")
+print(mot_multiplie)
+
+print("\n Exercice42")
+# Exercice 42
+# On continue avec les erreurs à trouver dans les fonctions !
+# Cette fois-ci, le script ne retourne pas d'erreur mais n'affiche pas le resultat escompte.
+# La fonction addition devrait nous permettre d'additionner deux nombres ensemble. Cependant, quand on print la variable 'resultat'.
+# Python nous retourne 'None', au lieu du resultat de l'addition(ici 15).
+# Modifiez la fonction pour le print de 'resultat affiche le resultat de l'addition
+# def addition(a, b):
+#   c = a + b
+#
+# resultat = addintion(5, 10)
+# print(resultat)
+
+
+def addition(a, b):
+    c = a + b
+    return c
+
+
+resultat = addition(5, 10)
+print(resultat)
+
+print("\n Exercice43")
+# Exercice 43
+# Notions abordees: boucle for, fonction range.
+# On continue avec la boucle for, cette fois-ci pour afficher la table de multiplication d'un nombre.
+# Dans ce cas-ci, votre script doit afficher la table de multiplication du nombre 7.
+# 0 * 7 = 0
+# 1 * 7 = 7
+# 2 * 7 = 14
+# 3 * 7 = 21
+# 4 * 7 = 28
+# 5 * 7 = 35
+# 6 * 7 = 42
+# 7 * 7 = 49
+# 8 * 7 = 56
+# 9 * 7 = 63
+# 10 * 7 = 70
+# Attention aux espaces entre chaque nombre et symbole !
+number = 7
+for i in range(11):
+    print("{i} x {number} = {result}".format(
+        i=i, number=number, result=i * 7))
