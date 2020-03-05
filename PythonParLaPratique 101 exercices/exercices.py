@@ -5,6 +5,10 @@ import constants
 import os
 import random
 
+###################
+# Niveau Debutant #
+###################
+
 print("Exercice 1")
 # Exercice 1
 # Notion abordees : les variables
@@ -558,3 +562,98 @@ number = 7
 for i in range(11):
     print("{i} x {number} = {result}".format(
         i=i, number=number, result=i * 7))
+
+print("\n Exercice44")
+# Exercice 44
+# Notions abordees: boucle for
+# Les boucles for, encore et toujours, cette fois-ci, un exercice dans lequel nous allons recuperer à la fois l'indice et l'element
+# sur lequel nous bouclons dans chaque iteration de la boucle for.
+# votre script doit donc retourner dans ce cas-ci:
+# 0 Pierre
+# 1 Paul
+# 2 Marie
+liste = ["Pierre", "Paul", "Marie"]
+index = 0
+for name in liste:
+    print("{index} {name}".format(index=index, name=name))
+    index += 1
+
+# Correction:
+liste = ["Pierre", "Paul", "Marie"]
+for i, nom in enumerate(liste):
+    print(i, nom)
+
+print("\n Exercice45")
+# Exercice 45
+# Notions abordees: boucle for, structure conditionnelle.
+# Le but de cet exercice est de recuperer dans un seconde liste, la liste 'nombre_pairs', uniquelment les nombres
+# pairs de la premiere liste.
+# votre script doit donc printer la liste suivante:
+# [0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48]
+nombres = range(50)
+nombres_pairs = []
+for i in nombres:
+    if (i % 2) == 0:
+        nombres_pairs.append(i)
+
+print(nombres_pairs)
+
+print("\n Exercice46")
+# Exercice 46
+# Notions abordees: boucle for, structure conditionnelle, comprehension liste.
+# On continue avec le meme exercice qui consiste à recuperer seulement les nombres pairs d'une liste.
+# Cette fois-ci, nous allons effectuer le meme code que precedemment mais en une seule ligne, grace
+# aux comprehensions de liste.
+# Votre script, pour etre valide, doit donc tenir en 3 lignes: une ligne pour declarer la liste, une ligne
+# pour la trier, et une derniere ligne pour printer la liste.
+nombres = range(50)
+nombre_pairs = [i for i in nombres if i % 2 == 0]
+print(nombre_pairs)
+
+########################
+# Niveau intermediaire #
+########################
+print("\n Exercice47")
+# Exercice 47
+# Notion abordees: boucle for.
+# Le but de cet exercice est de calculer la somme de chaque chiffre d'un nombre.
+# Dans ce cas-ci, votre script doit retourner le nombre 22(2 + 0 + 9 + 8 + 1 + 2)
+nombre = 209812
+somme = 0
+for c in str(nombre):
+    somme += int(c)
+print(somme)
+
+# Aller plus loin : Essayez de faire tenir votre script en une seule ligne, grace aux comprehensions de liste.
+nombre = 209812
+print(sum([int(i) for i in str(nombre)]))
+
+print("\n Exercice48")
+# Exercice 48
+# Notion abordees: comprehension liste.
+# On continue avec l'utilisqtion des comprehensions de liste, cette fois-ci pour remplacer une chaine de caractere dans les elements
+# d'une liste par une autre chaine de caractere.
+# Votre script doit donc afficher la liste suivante:
+# ['Pierre','Marie','Julien','Adrien','Julien']
+liste = ["Pierre", "Marie", "Julie", "Adrien", "Julie"]
+nom_a_chercher = "Julie"
+nouveau_nom = "Julien"
+
+liste = [name.replace(nom_a_chercher, nouveau_nom) if (name == nom_a_chercher) else (name)
+         for name in liste]
+print(liste)
+
+print("\n Exercice49")
+# Exercice 49
+# Le but de cet exercice est d'enlever les doublons de la liste.
+# Pour reussir l'exercice, vous devez utiliser une autre methode que celle qui consiste à convertir la liste en set pour enlever les
+# doublons.
+# Votre script doit donc afficher la liste suivante:
+# [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+nombres = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10]
+resultat = []
+for i in nombres:
+    if i not in resultat:
+        resultat.append(i)
+print(resultat)
