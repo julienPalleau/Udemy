@@ -1,3 +1,4 @@
+import enum
 from math import pi
 import time
 import random
@@ -47,7 +48,7 @@ print("\nExercice 2")
 # site_web = "Udemy"
 # print(site_web)
 
-# print("\nExercice 3")
+print("\nExercice 3")
 # # Exercice 3
 # # Notions abordees: les variables
 # # Dans cet exercice, nous allons afficher un nombre à l'interieur d'une chaine de caractere.
@@ -711,7 +712,7 @@ print("\n Exercice47")
 print("\n Exercice48")
 # # Exercice 48
 # # Notion abordees: comprehension liste.
-# # On continue avec l'utilisqtion des comprehensions de liste, cette fois-ci pour remplacer une chaine de caractere dans les elements
+# # On continue avec l'utilisation des comprehensions de liste, cette fois-ci pour remplacer une chaine de caractere dans les elements
 # # d'une liste par une autre chaine de caractere.
 # # Votre script doit donc afficher la liste suivante:
 # # ['Pierre','Marie','Julien','Adrien','Julien']
@@ -762,8 +763,30 @@ print("\n Exercice51")
 #
 employes = {}
 liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
-i = 0
-for mot in liste:
-    motPrecedent = liste[i-1]
-    i += 1
-    print("mot:{} et motPrecendent:{}".format(mot, motPrecedent))
+num = 1
+for element in liste:
+    if (isinstance(element, str)):
+        id = "id"+"-"+"0"+str(num)
+        employes[id] = element
+        num += 1
+print(employes)
+
+# autre solution:
+employes = {}
+liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
+i = 1
+for element in liste:
+    if not str(element).isdigit():
+        employes["id-{:02d}".format(i)] = element
+        i += 1
+
+print(employes)
+
+print("\n Exercice52")
+# Notions abordees: les dictionnaires.
+# On continue les dictionnaires: dans cet exercice, vous devez creer un dictionnaire qui contient toutes les lettres de l'alphabet.
+# La cle de chaque element du dictionnaire doit contenir la position de la lettre dans l'alphabet, et la valeur doit etre egal à la
+# lettre en question. L'indice de la premiere letrre doit etre 1 et non 0 !
+# votre dicitionnaire doit donc etre comme ci-dessous:
+{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h'} etc...
+# Aller plus loin: Essayer de faire tenir votre script en une seule ligne !
