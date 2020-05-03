@@ -1940,6 +1940,39 @@ print("\n Exercice47")
 # nombre = 209812
 # print(sum([int(i) for i in str(nombre)]))
 
+"""
+    SOLUTION
+
+    nombre = 209812
+    somme = sum([int(i) for i in str(nombre)])
+    print(somme)
+
+    EXPLICATION
+
+Ici, nous utilisons une compréhension de liste pour additionner chaque chiffre du nombre 209812.
+
+Premièrement, pour pouvoir boucler à travers chaque chiffre du nombre, on convertit notre nombre entier en chaîne de caractère :
+
+    str(nombre)
+
+Ce qui nous permet ensuite, à l'aide d'une compréhension de liste, de boucler à travers chaque chiffre :
+
+    [int(i) for i in str(nombre)]
+
+Au passage, nous convertissons chaque chiffre en nombre avec la fonction int.
+En effet, vu que nous avons converti notre nombre en chaîne de caractère, les éléments sur lesquels nous bouclons avec la boucle for sont des nombres en chaîne de caractère. Pour pouvoir les additionner 
+ensemble il faut donc les convertir en integer.
+
+Pour finir, on utilise la fonction sum, pour faire la somme de tous les nombres contenus dans la liste :
+
+    somme = sum([int(i) for i in str(nombre)])
+
+    POINTS IMPORTANTS À RETENIR
+
+    Pour boucler sur chaque chiffre d'un nombre, on convertit le nombre en chaîne de caractère.
+    Pour additionner ensemble tous les nombres contenus dans une liste, on utilise la fonction sum.
+"""
+
 print("\n Exercice48")
 # # Exercice 48
 # # Notion abordees: comprehension liste.
@@ -1956,6 +1989,36 @@ print("\n Exercice48")
 #          for name in liste]
 # print(liste)
 
+"""
+    SOLUTION
+
+    liste = ["Pierre", "Marie", "Julie", "Adrien", "Julie"]
+     
+    nom_a_chercher = "Julie"
+    nouveau_nom = "Julien"
+     
+    liste = [x.replace(nom_a_chercher, nouveau_nom) for x in liste]
+    print(liste)
+
+    EXPLICATION
+
+On continue dans cet exercice avec les compréhensions de liste que vous devez commencer à maîtriser.
+
+Encore une fois, on commence par boucler à travers chaque élément de la liste grâce à la compréhension de liste :
+
+    liste = [x for x in liste]
+
+En l'état, la compréhension de liste ci-dessus ne change absolument rien à la liste. Il faut donc utiliser la fonction replace pour remplacer le nom à chercher par le nouveau nom :
+
+    liste = [x.replace(nom_a_chercher, nouveau_nom) for x in liste]
+
+Ainsi, directement en bouclant sur la liste, on remplace toutes les occurrences de 'Julie' par 'Julien'.
+
+    POINTS IMPORTANTS À RETENIR
+
+    Pour remplacer un mot par un autre, on utilise la fonction replace.
+"""
+
 print("\n Exercice49")
 # # Exercice 49
 # # Le but de cet exercice est d'enlever les doublons de la liste.
@@ -1971,6 +2034,40 @@ print("\n Exercice49")
 #         resultat.append(i)
 # print(resultat)
 
+"""
+    SOLUTION
+
+    nombres = [1, 2, 2, 3, 4, 5, 5, 5, 6, 7, 7, 8, 9, 10]
+     
+    nombres_sans_duplicats = []
+     
+    for i in nombres:
+        if i not in nombres_sans_duplicats:
+            nombres_sans_duplicats.append(i)
+     
+    print(nombres_sans_duplicats)
+
+    EXPLICATION
+
+Dans cet exercice, il fallait trouver une façon d'enlever les doublons d'une liste sans passer par les set.
+
+Pour se faire, nous commençons par créer une liste vide, que nous allons remplir petit à petit par les nombres de la liste initiale.
+
+À chaque itération de la boucle, nous vérifions avec une structure conditionnelle, que le nombre courant sur lequel on boucle  n'est pas déjà présent dans la liste avec la syntaxe if i not in liste  :
+
+    for i in nombres:
+        if i not in nombres_sans_duplicats:
+            nombres_sans_duplicats.append(i)
+
+Si le nombre n'est pas déjà présent dans la liste vide que nous avons initialisé, nous l'ajoutons alors à cette liste.
+
+De cette façon, si on tombe une seconde fois sur le même nombre, la structure conditionnelle ne sera pas vérifiée et le nombre ne sera pas ajouté une deuxième fois dans la liste.
+
+    POINTS IMPORTANTS À RETENIR
+
+    Pour vérifier si un élément est déjà présent ou non dans une liste, on utilise la syntaxe i in liste. Si le nombre est déjà dans la liste, cette syntaxe retournera True, si non, False.
+"""
+
 print("\n Exercice50")
 # # Exercice 50
 # # Printer un phrase autant de fois qu'un utilisateur le demande
@@ -1981,6 +2078,18 @@ print("\n Exercice50")
 #     print(f"Le compteur est maintenant à {compteur}")
 #     compteur += 1
 #     res = input("Voulez vous continuer ? o/n: ")
+
+"""
+    SOLUTION
+
+    i = 0
+    continuer = "o"
+     
+    while continuer == "o":
+    	print(f"Le compteur est maintenant à {i}")
+    	continuer = input("Voulez-vous continuer ? o/n ")
+    	i += 1
+"""
 
 print("\n Exercice51")
 # Notions abordees: les dictionnaires, boucle for.
@@ -2002,18 +2111,38 @@ for element in liste:
         num += 1
 print(employes)
 
-# autre solution:
-employes = {}
-liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
-i = 1
-for element in liste:
-    if not str(element).isdigit():
-        employes["id-{:02d}".format(i)] = element
-        i += 1
-
-print(employes)
-
 """
+        SOLUTION
+
+    employes = {}
+     
+    liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
+     
+    i = 1
+     
+    for element in liste:
+        if not str(element).isdigit():
+            employes["id-{:02d}".format(i)] = element
+            i += 1
+     
+    print(employes)
+
+    EXPLICATION
+
+Pour cet exercice, nous avons du ruser un peu. Peut-être avez-vous commencé par utiliser la fonction enumerate pour récupérer directement l'indice et l'élément sur lequel on boucle ? Le problème est qu'ici, certains éléments ne sont pas valides et sont donc ignorés. Ainsi, pour garder un id d'employé continue, nous ne pouvons pas utiliser l'indice de l'élément sur lequel on boucle.
+
+C'est la raison d'être de la variable i que nous initialisons à 1 avant de passer dans la boucle et que nous incrémentons chaque fois qu'un employé valide est détecté.
+
+Pour détecter si un élément de la liste ne contient que des nombres, on utilise la fonction isdigit :
+
+    if not str(element).isdigit():
+
+Pour formatter la clé dans le dictionnaire, on utilise la fonction format :
+
+    employes["id-{:02d}".format(i)] = element
+
+La syntaxe :02d permet d'indiquer que nous souhaitons formater le nombre i pour qu'il contienne toujours 2 chiffres : 1 deviendra 01, 2 deviendra 02, 15 restera tel quel etc.
+
     POINTS IMPORTANTS À RETENIR
 
     Pour vérifier si une chaîne de caractère ne contient que des nombres, on utilise la fonction isdigit.
@@ -2037,15 +2166,58 @@ for letter in string.ascii_lowercase:
 
 print(alphabet)
 
-# autre solution
-print("\n autre solution: avec zip")
-alphabet = string.ascii_lowercase
-indices = range(1, len(alphabet) + 1)
-liste_zip = zip(indices, alphabet)
-resultat = dict(liste_zip)
-print(resultat)
 
 """     
+    POINTS IMPORTANTS À RETENIR
+
+    Pour créer une liste de tuple à partir de deux listes, on utilise la fonction zip.
+
+    Pour créer un dictionnaire à partir d'une liste de tuple, on peut utiliser la fonction dict.    SOLUTION
+
+    import string
+     
+    alphabet = string.ascii_lowercase
+    indices = range(1, len(alphabet) + 1)
+    liste_zip = zip(indices, alphabet)
+    resultat = dict(liste_zip)
+     
+    print(resultat)
+
+    EXPLICATION
+
+Dans cet exercice, nous utilisons la fonction zip, pour construire un dictionnaire comprenant les lettres de l'alphabet et leur position dans l'alphabet.
+
+Pour commencer, nous récupérons toutes les lettres de l'alphabet en minuscule, grâce au module string :
+
+    >>> alphabet = string.ascii_lowercase
+    >>> print(alphabet)
+    'abcdefghijklmnopqrstuvwxyz'
+
+Ensuite, on créé une liste qui contient les nombres de 1 à la longueur de l'alphabet, grâce à la fonction range et la fonction len :
+
+    >>> indices = range(1, len(alphabet) + 1)
+    >>> print(indices)
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+
+On ajoute 1 à la longueur de l'alphabet car notre liste commence à 1 et non 0.
+
+On utilise ensuite la fonction zip, qui permet de créer une liste de tuples à partir de deux listes (la liste de nombres et les lettres de l'alphabet) :
+
+    >>> liste_zip = zip(indices, alphabet)
+    >>> print(list(liste_zip))
+    [(1, 'a'), (2, 'b'), (3, 'c'), (4, 'd'), (5, 'e'), (6, 'f'), (7, 'g'), (8, 'h'), (9, 'i'), (10, 'j'),
+     (11, 'k'), (12, 'l'), (13, 'm'), (14, 'n'), (15, 'o'), (16, 'p'), (17, 'q'), (18, 'r'), (19, 's'),
+     (20, 't'), (21, 'u'), (22, 'v'), (23, 'w'), (24, 'x'), (25, 'y'), (26, 'z')
+
+Il ne nous reste plus qu'à utiliser la fonction dict pour convertir cette liste de tuple en dictionnaire.
+En effet, vous pouvez passer une liste contenant des tuples contenant deux éléments et la fonction dict va utiliser le premier élément comme clé et le deuxième élément comme valeur :
+
+    >>> resultat = dict(liste_zip)
+    >>> print(resultat)
+    {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h', 9: 'i', 10: 'j', 11: 'k', 12: 'l',
+     13: 'm', 14: 'n', 15: 'o', 16: 'p', 17: 'q', 18: 'r', 19: 's', 20: 't', 21: 'u', 22: 'v', 23: 'w',
+     24: 'x', 25: 'y', 26: 'z'}
+
     POINTS IMPORTANTS À RETENIR
 
     Pour créer une liste de tuple à partir de deux listes, on utilise la fonction zip.
@@ -2069,7 +2241,38 @@ def longueur(variable):
 
 
 print(longueur("bonjour"))
+
 """
+        SOLUTION
+
+    def longueur(variable):
+        compte = 0
+        for i in variable:
+            compte += 1
+        return compte
+     
+    print(longueur("bonjour"))
+
+    EXPLICATION
+
+Dans cette série d'exercices, nous attaquons un sujet intéressant qui consiste à recréer les fonctions de base qui viennent avec Python.
+
+Ici, la fonction len, qui permet de calculer la longueur de différents types de variables : le nombre de caractère dans une chaîne de caractère, le nombre d'éléments dans une liste etc.
+
+Il apparaît donc rapidement que nous allons devoir boucler à travers les différents éléments qui composent la variable qui est passée à notre fonction 'longueur'. Pour ce faire, on utilise donc logiquement une boucle for.
+
+Puis, afin de compter le nombre d'éléments, on utilise tout simplement une variable 'compte' qu'on incrémente à chaque itération de la boucle :
+
+    compte = 0
+    for i in variable:
+        compte += 1
+
+ Il ne reste plus qu'à retourner le résultat contenu dans la variable :
+
+    return compte
+
+Et voilà, le tour est joué ! Une fonction très importante que l'on utilise quotidiennement en Python et qu'il est assez simple à recréer en fin de compte.
+
     POINTS IMPORTANTS À RETENIR
 
     Pour boucler à travers les différents éléments de plusieurs types de variables, on peut utiliser une boucle for.
