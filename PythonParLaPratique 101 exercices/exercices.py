@@ -2278,3 +2278,273 @@ Et voilà, le tour est joué ! Une fonction très importante que l'on utilise qu
     Pour boucler à travers les différents éléments de plusieurs types de variables, on peut utiliser une boucle for.
     Pour incrémenter facilement un nombre entier, on peut utiliser la syntaxe +=
 """
+
+print("\n Exercice 54")
+# Notions abordees: La fonction print, la fonction range, la boucle for.
+# Dans cet exercice, vous allez devoir afficher une moitie de losange composee du symbole '*' grace à une boucle for
+# et la fonction print
+# votre scipt doit afficher le motif suivant:
+# *
+# **
+# ***
+# ****
+# *****
+# ******
+# *******
+# ********
+# *******
+# ******
+# *****
+# ****
+# ***
+# **
+# *
+n = 8
+symbole = '*'
+for i in range(0, n):
+    resultat = (symbole)*i
+    print(resultat)
+
+for i in range(n, 0, -1):
+    resultat = (symbole)*i
+    print(resultat)
+
+"""
+SOLUTION
+
+    n = 8
+    symbole = "*"
+    nombres = list(range(1, n+1)) + list(range(n-1, 0, -1))
+    for i in nombres:
+        print(symbole*i)
+
+EXPLICATION
+
+Beaucoup de nombres dans tous les sens avec cet exercice mais au final vous allez voir que c'est assez simple.
+
+Le but de cet exercice était d'afficher une moitié de losange :
+
+    *
+    **
+    ***
+    ****
+    *****
+    ******
+    *******
+    ********
+    *******
+    ******
+    *****
+    ****
+    ***
+    **
+    *
+
+Nous avons donc besoin d'afficher le symbole contenu dans la variable 'symbole' 1 fois, puis 2, puis 3 etc, jusqu'à la valeur du nombre contenu dans la variable n. Il va donc falloir dans un premier temps 
+incrémenter le nombre de fois que l'on affiche le symbole, puis dans un deuxième temps, décrémenter cette variable pour revenir à 1.
+
+L'objectif est donc de créer une première liste allant de 1 jusqu'au nombre n :
+
+    >>> n = 8
+    >>> liste = range(1, n+1)
+    >>> print(liste)
+    [1, 2, 3, 4, 5, 6, 7, 8]
+
+La deuxième valeur indiquée dans la fonction range est n+1 car la fonction range est exclusive. Il faut donc indiquer 9 (n+1) si l'on veut avoir le nombre 8 dans la liste. La première valeur que nous indiquons à 
+la fonction range est 1 puisque nous voulons commencer la liste à partir du nombre 1.
+
+Deuxièmement, il nous faut une liste qui cette fois-ci, commence à 7 (n-1, puisque le nombre 8 est déjà dans la première liste, nous n'en n'avons pas besoin une seconde fois). La liste doit se rendre jusqu'à 1 et 
+décrémenter à chaque fois.
+Pour cela, nous passons le nombre -1 en troisième paramètre à la fonction range, afin d'avoir une liste décrémenté.
+On part donc de 7 (8-1), pour aller jusqu'à 1 (on indique donc 0 en deuxième paramètre à la fonction range car là encore, cette fonction est exclusive).
+
+    >>> n = 8
+    >>> liste = range(n-1, 0, -1)
+    >>> print(liste)
+    [7, 6, 5, 4, 3, 2, 1]
+
+Nous additionnons ensuite ces deux listes ensemble, en prenant le soin de les convertir en liste car nous ne pouvons pas ajouter deux objets range l'un avec l'autre :
+
+    >>> nombres = list(range(1, n+1)) + list(range(n-1, 0, -1))
+    >>> print(nombres)
+    [1, 2, 3, 4, 5, 6, 7, 8, 7, 6, 5, 4, 3, 2, 1]
+
+Nous avons donc maintenant la liste qui va nous permettre d'afficher le bon nombre de symboles à chaque itération. Il ne reste donc plus qu'à boucler dans cet liste et afficher le symbole multiplié par le nombre à chaque itération de la boucle :
+
+    for i in nombres:
+        print(symbole*i)
+
+On va donc printer le symbole 1 fois, puis 2, puis 3... jusqu'à 8, et ensuite redescendre à 7, 6, 5... jusqu'à 1.
+
+POINTS IMPORTANTS À RETENIR
+
+    Pour créer une liste avec la fonction range en sens inverse, on peut passer un troisième paramètre : -1
+"""
+
+print("\n Exercice 55")
+# Notions abordees: les boucles, les chaines de caractere.
+# Dans cet exercice, nous aloons, à partir d'une variable 'symbole' et un variable 'taille'
+# creer un pyramdide avec ce symbole, de la hauteur du nombre contenu dans la variable 'taille'.
+# Dans cet exemple-ci, nous allons donc afficher une pyramide de dollar ($) de hauteur 10.
+# votre script devra donc afficher:
+#         $
+#        $ $
+#       $ $ $
+#      $ $ $ $
+#     $ $ $ $ $
+#    $ $ $ $ $ $
+#   $ $ $ $ $ $ $
+#  $ $ $ $ $ $ $ $
+# $ $ $ $ $ $ $ $ $
+
+symbole = "$"
+taille = 10
+for i in range(1, taille+1):
+    print(" "*(((11)-i)-1)+(symbole + " ")*i)
+
+"""
+    SOLUTION
+
+    symbole = "$"
+     
+    taille = 10
+     
+    for i in range(1, taille + 1):
+        espaces = " " * (taille - i)
+        print(espaces + (symbole + " ") * i)
+
+    EXPLICATION
+
+On continue avec un exercice d'affichage, grâce à la fonction print.
+
+Le but de cet exercice était d'afficher une pyramide de dollars !
+
+Nous commençons donc par définir le symbole utilisé et la taille de la pyramide dans deux variables, respectivement 'symbole' et 'taille'.
+
+Nous entamons ensuite une boucle for qui boucle sur une liste de nombres de la taille de notre variable 'taille' (on commence à 1 parce que notre première ligne contient un symbole. Si on commençait à 0 on aurait une première ligne vide).
+
+Nous déclarons ensuite à l'intérieur de la boucle une variable 'espaces' qui contient un caractère espace, multiplié par la taille de la liste moins la valeur contenue dans l'itération actuelle de la boucle (la variable i).
+À la première itération nous aurons donc une variable espaces qui contiendra 9 espaces (10 - 1), puis 8 (10 - 2), puis 7 (10 - 3) etc.
+
+Cela permettra de décaler notre symbole pour que le premier dollars soit au milieu de la pyramide, puis chaque symbole suivant se retrouvera de plus en plus proche de la marge.
+
+Nous faisons donc ensuite un print de cette variable espaces, à laquelle nous ajoutons le symbole plus un espace, multiplié par le nombre de l'itération actuel (la variable i).
+Pourquoi ajouter un espace au symbole et multiplier le tout par i ? Parce que si on n'ajoute pas d'espace au symbole, on se retrouve avec une pyramide un peu bizarre :
+
+             $
+            $$
+           $$$
+          $$$$
+         $$$$$
+        $$$$$$
+       $$$$$$$
+      $$$$$$$$
+     $$$$$$$$$
+    $$$$$$$$$$
+
+Pour que chaque symbole soit bien aligné pour constituer une pyramide, il faut qu'il y ait un espace entre chaque symbole $.
+
+    POINTS IMPORTANTS À RETENIR
+
+    Pour afficher plusieurs fois de suite un caractère, on peut tout simplement multiplier une chaîne de caractère par un nombre.
+"""
+print("\n Exercice 56")
+# Notions abordees: la fonction format.
+# Dans cet exercice, nous continuons d'aborder le formatage de texte, cette fois-ci avec la fonction format.
+# le but de cet exercice est d'afficher le texte suivant:
+# -------------
+# |    B      |
+# |    o      |
+# |    n      |
+# |    j      |
+# |    o      |
+# |    u      |
+# |    r      |
+# |           |
+# |    J      |
+# |    u      |
+# |    l      |
+# |    i      |
+# |    e      |
+# |    n      |
+# -------------
+
+texte = "Bonjour Julien"
+longueur = len(texte)
+symbole1 = "-"
+symbole2 = "|"
+
+print(symbole1 * longueur)
+for lettre in texte:
+    print(f"{symbole2}{lettre:^{longueur-2}}{symbole2}")
+print(symbole1 * longueur)
+"""
+    SOLUTION
+
+    texte = "Bonjour Udemy"
+    longueur = len(texte)
+
+    symbole1 = "-"
+    symbole2 = "|"
+
+    print(symbole1*longueur)
+
+    for lettre in texte:
+        print("{0}{1:^{2}}{0}".format(symbole2, lettre, longueur - 2))
+
+    print(symbole1*longueur)
+
+    EXPLICATION
+
+Beaucoup de lignes de codes qui ne font pas forcément de sens à prime abord dans cet exercice, nous allons donc pas à pas expliquer la logique derrière cette solution.
+
+Tout d'abord, nous déclarons un certain nombre de variables : le texte à afficher, la longueur du texte (dans la variable 'longueur') et les deux symboles que nous allons utiliser ('symbole1' et 'symbole2').
+
+Nous commençons ensuite par afficher le premier symbole, multiplié par la longueur de la chaîne de caractère :
+
+    >>> print(symbole1*longueur)
+    -------------
+
+Nous passons ensuite avec une boucle for à travers chaque lettre du mot :
+
+    for lettre in texte:
+
+Vient ensuite, la partie un peu plus complexe de l'exercice. Nous utilisons toute la puissance que nous permet la méthode format avec la syntaxe suivante :
+
+    print("{0}{1:^{2}}{0}".format(symbole2, lettre, longueur - 2))
+
+Tout d'abord, nous définissons deux balises au début et à la fin de la chaîne de caractère, représentées par les accolades entourant le 0 : {0}
+
+Cela nous permet d'afficher la symbole 2 au début et à la fin.
+
+
+Puis, nous utilisons la syntaxe suivante :
+
+    {1:^{2}}
+
+Le 1 signifie que l'on insère à l'intérieur de cette accolade le 2e argument passé à la méthode format (la variable 'lettre', donc chaque lettre de notre variable texte, récupérée grâce à la boucle for).
+
+La deuxième partie, avec les deux points et l'accent circonflexe, signifie que l'on veut ajouter un 'padding' avant et après cette lettre : en gros, python va ajouter autant d'espaces que nécessaire avant et après la variable que l'on insère dans l'accolade, afin que le nombre total de caractère soit égal au nombre passé.
+Ce nombre, on lui passe grâce à l'accolade qui contient le 2, signifiant que l'on va passer ce nombre comme 3e argument à la méthode format. On passe comme nombre 'longueur - 2', donc la longueur du texte, minus les 2 symboles que l'on place au début et à la fin de la chaîne de caractère (rappelez-vous, les accolades avec le 0) :
+
+    >>> print("{0}{1:^{2}}{0}".format(symbole2, lettre, longueur - 2))
+    |     B     |
+
+Ainsi, on s'assure que la longueur totale de la ligne, soit égale à la longueur de la première ligne.
+
+Puis on termine notre script par le même print que pour afficher la première ligne, afin de refermer notre boîte :
+
+    print(symbole1*longueur)
+
+    POINTS IMPORTANTS À RETENIR
+
+    Vous pouvez afficher plusieurs fois le même élément dans une chaîne de caractère avec la méthode format, en utilisant plusieurs fois le même indice à l'intérieur des accolades.
+    Pour faire en sorte qu'une chaîne de caractère occupe un nombre précis de caractère, vous pouvez la 'padder' avec des espaces, en utilisant l'accent circonflexe à l'intérieur de votre chaîne de caractère et la méthode format.
+"""
+
+print("\n Exercice 57")
+# Notions abordees: la boucle for, les fonctions, les structures conditionnelles.
+# Dans cet exercice, nous voulons formater un nombre pour ajouter une virgule entre chaque millier.
+# Ansi, le nombre contenu dans la variable 'nombre' devra etre comme ci-dessous:
+# 52,039,480,394,023
+# Votre script doit bien entendue fonctionner peu importe le nombre
