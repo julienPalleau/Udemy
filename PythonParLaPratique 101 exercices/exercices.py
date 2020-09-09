@@ -567,7 +567,6 @@ Un dernier point auquel il fallait faire attention là encore : pour intégrer l
     On peut spécifier un écart à la fonction range en passant un nombre en troisième argument.
 """
 
-
 print("\nExercice 14")
 # Exercice 14
 # Notions abordees: Les modules, la boucle for.
@@ -1920,7 +1919,6 @@ Pour finaliser cet exercice, il ne reste plus qu'à ajouter la condition qui per
     Pour exécuter une boucle for sur une seule ligne et ainsi trier les éléments d'une liste, on utilise une compréhension de liste.
 """
 
-
 ########################
 # Niveau intermediaire #
 ########################
@@ -2106,7 +2104,7 @@ liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
 num = 1
 for element in liste:
     if (isinstance(element, str)):
-        id = "id"+"-"+"0"+str(num)
+        id = "id" + "-" + "0" + str(num)
         employes[id] = element
         num += 1
 print(employes)
@@ -2165,7 +2163,6 @@ for letter in string.ascii_lowercase:
     i += 1
 
 print(alphabet)
-
 
 """     
     POINTS IMPORTANTS À RETENIR
@@ -2226,6 +2223,8 @@ En effet, vous pouvez passer une liste contenant des tuples contenant deux élé
 """
 
 print("\n Exercice 53")
+
+
 # Notons abordees: la boucle for, les fonctions.
 # Un exercice toujours tres interessant à faire en Python est d'essayer de recreer les fonctions de base.
 # Dans cet exercice, nous allons recreer la fonction len() qui permet de compter la longueur d'une variable.
@@ -2302,11 +2301,11 @@ print("\n Exercice 54")
 n = 8
 symbole = '*'
 for i in range(0, n):
-    resultat = (symbole)*i
+    resultat = (symbole) * i
     print(resultat)
 
 for i in range(n, 0, -1):
-    resultat = (symbole)*i
+    resultat = (symbole) * i
     print(resultat)
 
 """
@@ -2399,8 +2398,8 @@ print("\n Exercice 55")
 
 symbole = "$"
 taille = 10
-for i in range(1, taille+1):
-    print(" "*(((11)-i)-1)+(symbole + " ")*i)
+for i in range(1, taille + 1):
+    print(" " * (((11) - i) - 1) + (symbole + " ") * i)
 
 """
     SOLUTION
@@ -2476,7 +2475,7 @@ symbole2 = "|"
 
 print(symbole1 * longueur)
 for lettre in texte:
-    print(f"{symbole2}{lettre:^{longueur-2}}{symbole2}")
+    print(f"{symbole2}{lettre:^{longueur - 2}}{symbole2}")
 print(symbole1 * longueur)
 """
     SOLUTION
@@ -2548,3 +2547,136 @@ print("\n Exercice 57")
 # Ansi, le nombre contenu dans la variable 'nombre' devra etre comme ci-dessous:
 # 52,039,480,394,023
 # Votre script doit bien entendue fonctionner peu importe le nombre
+nombre = []
+resultat = ''
+while len(nombre) < 4:
+    nombre = ['5', '2', '0', '3', '9', '4', '8', '0', '3', '9', '4', '0', '2', '3']
+
+    if (len(nombre) < 4):
+        print("Votre nombre est < 1000 !\n")
+    else:
+        i = 0
+    nombre.reverse()
+
+    while i < len(nombre):
+        if (int(i) % 3 == 0) and (i != 0):
+            resultat = resultat + ','
+        resultat += nombre[i]
+        i += 1
+
+print(resultat[::-1])
+
+
+# correction
+def ajout_separateur(nombre):
+    nombre = str(nombre)[::-1]
+    resultat = ""
+
+    for i, chiffre in enumerate(nombre, 1):
+        print(i, chiffre)
+        chiffre_formatte = chiffre + "," if i % 3 == 0 and i != len(nombre) else chiffre
+        resultat += chiffre_formatte
+
+    return resultat[::-1]
+
+
+nombre = 52039480394023
+print(ajout_separateur(nombre))
+
+print("\n Exercice 58")
+# Dans cet exercice, nous allons utiliser le module datetime pour calculer l'annee de naissance de quelqu'un
+# à partir de son age. Dans cet exemple, nous allons prendre un age de 25 ans.
+# Afin de ne pas fausser les resultats, nous allons egalement indiquer le mois de naissance afin de verifier si
+# la date d'anniversaire de la personne est passee ou non.
+# Nous avons donc deux variables:
+# 1 - La variable 'age' qui contient l'age de la personne (ici: 25).
+# 2 - Le mois de naissance, contenu dans la variable 'mois_de_naissance' (ici, le mois d'octobre, soit 10).
+# A partir de ces deux infos, il faut calculer l'annee à laquelle est nee la personne.
+# Dansce cas-ci. l'annee que vous devez afficher est '1994'
+from datetime import date
+
+age = 25
+mois_de_naissance = 10
+
+
+def date_of_birth(age, month):
+    current_year = date.today().year
+    current_month = date.today().month
+    birth_year = current_year - age
+    if month > current_month:
+        birth_year += 1
+    return birth_year
+
+
+print(date_of_birth(25, 10))
+
+print("Exercice 59")
+
+
+# Notions abordees: la fonction sum, la fonction range.
+# Dans cet exercice, nous allons calculer la somme des nombres entre deux nombres.
+# Dans cet exemple-ci, nous prenons les nombres 2 et 6, le resultat de votre script doit donc etre 20 (2 +3 + 4 + 5 + 6)
+# Attention: votre script doit fonctiooner peu importe l'ordre dans lequel vous donnez les nombres : somme(2, 6) et
+# somme(6, 2) doivent retourner le meme resultat !
+# Astuces: Afin de faire fonctionner le script peu importe l'ordre des variables a et b, pensez à utiliser les fonctions
+# min et max.
+
+def somme(a, b):
+    total = 0
+    for i in range(min(a, b), max(a, b)+1):
+        total += i
+    return (total)
+
+
+print(somme(2, 6))
+
+# correction
+def somme(a, b):
+    return sum(range(min(a, b), max(a, b) + 1))
+
+print(somme(2, 6))
+
+
+print("Exercice 60")
+from math import floor
+import string
+# Separer la liste ci-dessous en 2 par rapport au milieu de l'alphabet.
+employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
+
+alphabet = string.ascii_lowercase
+milieu = int(len(alphabet)/2)
+print(milieu)
+
+alphabet_01, alphabet_02 = alphabet[:milieu], alphabet[milieu:]
+employes_a_m = []
+employes_n_z = []
+for employe in employes:
+    premiere_lettre = employe[0].lower()
+    if premiere_lettre in alphabet_01:
+        employes_a_m.append(employe)
+    elif premiere_lettre in alphabet_02:
+        employes_n_z.append(employe)
+
+print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
+print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
+
+# Optimal solution
+employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
+alphabet = string.ascii_lowercase
+employes_a_m = [e for e in employes if e[0].lower() in alphabet[:13]]
+employes_n_z = [e for e in employes if e[0].lower() in alphabet[13:]]
+
+print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
+print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
+
+print("Exercice 61")
+# Notions abordees: le module os, la boucle while, les fonctions.
+# Dans cet exercice, nous abordons le module os !
+# Le but de cet exercice est de creer une fonction, qui permette de romonter dans une structure de dossier autant de
+# fois qu'indique.
+# Par exemple avec le dossier suivant: /Users/Thibh/Desktop/Dossier_01/Tutoriel/Udemy
+# Nous allons indiquer à la fonction 'remonter_dossier' le nombre de dossier que l'on veut remonter, par exemple:
+# remonter_dossier("/Users/Thibh/Desktop/Dossier_01/Udemy, 3)
+# Notre fonction va donc remonter dans la structure de dossier 3 fois et nous retourner le chemin suivant:
+# /Users/Thibh/Desktop
+# Astuces: Pour recuperer le dossier parent d'un dossier, on utilise la fonction os.path.dirname() du module OS.
