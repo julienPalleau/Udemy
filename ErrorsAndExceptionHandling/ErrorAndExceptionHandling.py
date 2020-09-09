@@ -3,7 +3,7 @@
 try:
     # Want to attempt this code
     # May have an error
-    result = 10 + 10
+    result = 10 + '10'
 except:
     print("Hey it looks like you aren't adding correctly!")
 else:
