@@ -2623,28 +2623,30 @@ print("Exercice 59")
 
 def somme(a, b):
     total = 0
-    for i in range(min(a, b), max(a, b)+1):
+    for i in range(min(a, b), max(a, b) + 1):
         total += i
     return (total)
 
 
 print(somme(2, 6))
 
+
 # correction
 def somme(a, b):
     return sum(range(min(a, b), max(a, b) + 1))
 
-print(somme(2, 6))
 
+print(somme(2, 6))
 
 print("Exercice 60")
 from math import floor
 import string
+
 # Separer la liste ci-dessous en 2 par rapport au milieu de l'alphabet.
 employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
 
 alphabet = string.ascii_lowercase
-milieu = int(len(alphabet)/2)
+milieu = int(len(alphabet) / 2)
 print(milieu)
 
 alphabet_01, alphabet_02 = alphabet[:milieu], alphabet[milieu:]
@@ -2669,7 +2671,7 @@ employes_n_z = [e for e in employes if e[0].lower() in alphabet[13:]]
 print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
 print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
 
-print("Exercice 61")
+print("\nExercice 61")
 # Notions abordees: le module os, la boucle while, les fonctions.
 # Dans cet exercice, nous abordons le module os !
 # Le but de cet exercice est de creer une fonction, qui permette de romonter dans une structure de dossier autant de
@@ -2680,3 +2682,79 @@ print("Exercice 61")
 # Notre fonction va donc remonter dans la structure de dossier 3 fois et nous retourner le chemin suivant:
 # /Users/Thibh/Desktop
 # Astuces: Pour recuperer le dossier parent d'un dossier, on utilise la fonction os.path.dirname() du module OS.
+import os
+
+dossier = "/Users/MOTTIER LICIE/Documents/GitHub/Udemy/PythonParLaPratique 101 exercices"
+
+
+def remonter_dossier(dossier, num=1):
+    for i in range(num):
+        dossier = os.path.dirname(dossier)
+    return dossier
+
+
+print(remonter_dossier(dossier, 1))
+
+# Correction:
+import os
+
+dossier = "/Users/Thibh/Desktop/Dossier_01/Tutoriel/Udemy"
+
+
+def remonter_dossier_2(dossier, iterations=1):
+    i = 0
+    while i < iterations:
+        dossier = os.path.dirname(dossier)
+        i += 1
+    return dossier
+
+
+# print(remonter_dossier(dossier, 3))
+
+
+print("\nExercice 62")
+# Le but est de transformer un chemin relatif en chemin absolue
+chemin = "/Users/jpalleau/Desktop/Dossier_01/../../Dossier_02/Udemy"
+
+
+def normalize_path(chemin):
+    chemin_parts = chemin.split("/")
+    while ".." in chemin_parts:
+        index = chemin_parts.index("..")
+        chemin_parts.pop(index)
+        chemin_parts.pop(index - 1)
+
+    return os.sep.join(chemin_parts)
+
+
+print(normalize_path(chemin))
+
+
+print("\nExercice 63")
+import os
+# Current directory under wich a .py is executed
+
+cur_dir = os.path.realpath(os.path.dirname(__file__))
+                            # __file__ permet de rechuperer le chemin complet vers le scipt execute
+                            # dirname permet de recuperer le dossier parent
+                            # realpath return the canonical path of the specified filename, eliminating any
+                            # symbolic links encountered in the path (if they are supported by the operating system).
+print(cur_dir)
+cur_dir = os.getcwd() # recupere le dossier parent ou le scripte python est execute
+print(cur_dir)
+fichier = os.path.join(cur_dir, "fichier.txt")
+
+# pour ecrire a l'endroit ou se trouve le script il est possible de se passer de cur_dir et fichier
+# et d'ecrire directement with open('fichier2.txt', 'a') as mon_fichier: ... Ainsi python ecrit automatiquement
+# dans le repertoire ou le script est appele.
+
+# Ecrire du texte à l'interieur d'un fichier
+with open(fichier, 'a') as mon_fichier:
+    mon_fichier.write("Bonjour tout le monde ! \n")
+
+# Lire toutes les lignes d'un fichier
+with open(fichier, 'r') as mon_fichier:
+    lines = mon_fichier.readlines()
+    for line in lines:
+        print(line)
+
