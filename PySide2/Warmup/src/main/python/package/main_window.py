@@ -31,5 +31,5 @@ class MainWindow(QtWidgets.QWidget):
     def bouton_clicked(self):
         message_box = QtWidgets.QMessageBox()
         message_box.setWindowTitle("Bravo")
-        message_box.setWindowTitle("Tu as reussi ta premiere application")
+        message_box.setText("Tu as reussi ta premiere application!")
         message_box.exec_()
