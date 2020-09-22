@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5508ee15-ac1e-44f1-8277-00e79bfd7f06" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/python/package/api/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/python/package/api/note.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/package/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/package/main_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/python" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.note">
+  <component name="RunManager" selected="Python.Launch">
     <configuration name="Launch" type="PythonConfigurationType" factoryName="Python">
       <module name="PyNotes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -97,6 +97,24 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main_window" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyNotes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\MOTTIER LUCIE\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/package/main_window.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="note" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PyNotes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -131,11 +149,12 @@
       <item itemvalue="Python.constants" />
       <item itemvalue="Python.note" />
       <item itemvalue="Shell Script.Freeze" />
+      <item itemvalue="Python.main_window" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.note" />
-        <item itemvalue="Python.note" />
+        <item itemvalue="Python.main_window" />
+        <item itemvalue="Python.main_window" />
         <item itemvalue="Python.note" />
         <item itemvalue="Python.note" />
         <item itemvalue="Python.note" />
@@ -170,22 +189,26 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="739" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600765774761" />
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1600764358332">
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1600779375784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600764358332" />
-    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1600764358331">
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
+    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1600779375784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600764358331" />
-    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1600764358331">
+    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
+    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1600779375784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600764358331" />
-    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1600764358332">
+    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1600779375784">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600764358332" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
+    <state x="540" y="323" key="IDE.errors.dialog" timestamp="1600777016858">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="540" y="323" key="IDE.errors.dialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600777016858" />
     <state x="461" y="225" key="SettingsEditor" timestamp="1600765783851">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
