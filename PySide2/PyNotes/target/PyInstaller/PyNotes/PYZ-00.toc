@@ -12,9 +12,17 @@
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\datetime.py',
    'PYMODULE'),
-  ('tracemalloc',
+  ('typing',
    'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tracemalloc.py',
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\typing.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_compat_pickle.py',
    'PYMODULE'),
   ('__future__',
    'C:\\Users\\MOTTIER '
@@ -187,6 +195,14 @@
   ('sysconfig',
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tokenize.py',
    'PYMODULE'),
   ('urllib.parse',
    'C:\\Users\\MOTTIER '
@@ -400,21 +416,9 @@
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\string.py',
    'PYMODULE'),
-  ('_compat_pickle',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_compat_pickle.py',
-   'PYMODULE'),
-  ('pickle',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pickle.py',
-   'PYMODULE'),
   ('logging',
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\logging\\__init__.py',
-   'PYMODULE'),
-  ('pprint',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pprint.py',
    'PYMODULE'),
   ('unittest.case',
    'C:\\Users\\MOTTIER '
@@ -423,10 +427,6 @@
   ('unittest.suite',
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\suite.py',
-   'PYMODULE'),
-  ('fnmatch',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\fnmatch.py',
    'PYMODULE'),
   ('unittest.loader',
    'C:\\Users\\MOTTIER '
@@ -452,9 +452,33 @@
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\doctest.py',
    'PYMODULE'),
-  ('typing',
+  ('textwrap',
    'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\typing.py',
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\argparse.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pprint.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pickle.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\base64.py',
    'PYMODULE'),
   ('_compression',
    'C:\\Users\\MOTTIER '
@@ -464,9 +488,21 @@
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\bz2.py',
    'PYMODULE'),
-  ('base64',
+  ('stringprep',
    'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\base64.py',
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\struct.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\copy.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\gettext.py',
    'PYMODULE'),
   ('getopt',
    'C:\\Users\\MOTTIER '
@@ -475,10 +511,6 @@
   ('quopri',
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\quopri.py',
-   'PYMODULE'),
-  ('stringprep',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stringprep.py',
    'PYMODULE'),
   ('stat',
    'C:\\Users\\MOTTIER '
@@ -519,38 +551,6 @@
   ('os',
    'C:\\Users\\MOTTIER '
    'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py',
-   'PYMODULE'),
-  ('token',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\token.py',
-   'PYMODULE'),
-  ('struct',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\struct.py',
-   'PYMODULE'),
-  ('gettext',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\gettext.py',
-   'PYMODULE'),
-  ('copy',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\copy.py',
-   'PYMODULE'),
-  ('textwrap',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\textwrap.py',
-   'PYMODULE'),
-  ('argparse',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\argparse.py',
-   'PYMODULE'),
-  ('tokenize',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tokenize.py',
-   'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\MOTTIER '
-   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_py_abc.py',
    'PYMODULE'),
   ('package.main_window',
    'C:\\Users\\MOTTIER '
