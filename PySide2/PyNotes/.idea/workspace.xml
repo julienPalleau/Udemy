@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5508ee15-ac1e-44f1-8277-00e79bfd7f06" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/base/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/build/settings/base.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/build/settings/base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/Icon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/Icon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/IconBack.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/base/16.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/base/16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/base/24.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/base/24.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/base/32.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/base/32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/base/48.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/base/48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/base/64.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/base/64.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/linux/1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/linux/1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/linux/128.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/linux/128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/linux/256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/linux/256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/linux/512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/linux/512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/mac/1024.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/mac/1024.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/mac/128.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/mac/128.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/mac/256.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/mac/256.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/icons/mac/512.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/icons/mac/512.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/python/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/python/package/main_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/package/main_window.py" afterDir="false" />
     </list>
@@ -189,22 +206,22 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="739" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600765774761" />
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1600779375784">
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1600787775560">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
-    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1600779375784">
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600787775560" />
+    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1600787775560">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
-    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1600779375784">
+    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600787775560" />
+    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1600787775560">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
-    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1600779375784">
+    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600787775560" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1600787775560">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600779375784" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1600787775560" />
     <state x="540" y="323" key="IDE.errors.dialog" timestamp="1600777016858">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>

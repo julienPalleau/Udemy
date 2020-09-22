@@ -1,10 +1,12 @@
 from PySide2 import QtWidgets, QtGui
+from PySide2.QtWidgets import QAbstractItemView
 
 from package.api.note import Note, get_notes
 
 class MainWindow(QtWidgets.QWidget):
-    def __init__(self):
+    def __init__(self, ctx):
         super().__init__()
+        self.ctx = ctx
         self.setWindowTitle("PyNotes")
 
         self.setup_ui()
@@ -23,7 +25,9 @@ class MainWindow(QtWidgets.QWidget):
         self.te_contenu = QtWidgets.QTextEdit()
 
     def modify_widgets(self):
-        pass
+        css_file = self.ctx.get_resource("style.css")
+        with open(css_file, "r") as f:
+            self.setStyleSheet(f.read())
 
     def create_layouts(self):
         self.main_layout = QtWidgets.QGridLayout(self)
@@ -54,7 +58,17 @@ class MainWindow(QtWidgets.QWidget):
             self.add_note_to_listwidget(note)
 
     def delete_selected_note(self):
-        print("Suppression de la note")
+        selected_item = self.get_selected_lw_item()
+        if selected_item:
+            resultat = selected_item.note.delete()
+        if resultat:
+            self.lw_notes.takeItem(self.lw_notes.row(selected_item))
+
+    def get_selected_lw_item(self):
+        selected_items = self.lw_notes.selectedItems()
+        if selected_items:
+            return selected_items[0]
+        return None
 
     def populate_notes(self):
         notes = get_notes()
@@ -62,7 +76,15 @@ class MainWindow(QtWidgets.QWidget):
             self.add_note_to_listwidget(note)
 
     def populate_note_content(self):
-        print("Charegement du contenu de la note")
+        selected_item = self.lw_notes.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
+        selected_item = self.get_selected_lw_item()
+        if selected_item:
+            self.te_contenu.setText(selected_item.note.content)
+        else:
+            self.te_contenu.clear()
 
     def save_note(self):
-        print("Sauvegarde du contenu de la note")
+        selected_item = self.get_selected_lw_item()
+        if selected_item:
+            selected_item.note.content = self.te_contenu.toPlainText()
+            selected_item.note.save()

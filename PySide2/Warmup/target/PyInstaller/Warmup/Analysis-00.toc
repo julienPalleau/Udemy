@@ -1,0 +1,1099 @@
+(['C:\\Users\\MOTTIER '
+  'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\src\\main\\python\\main.py'],
+ ['C:\\Users\\MOTTIER '
+  'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\src\\main\\python',
+  'C:\\Users\\MOTTIER '
+  'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\target\\PyInstaller'],
+ ['codecs'],
+ ['C:\\Users\\MOTTIER LUCIE\\venv\\lib\\site-packages\\fbs\\freeze\\hooks'],
+ [],
+ ['C:\\Users\\MOTTIER '
+  'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\target\\PyInstaller\\fbs_pyinstaller_hook.py'],
+ False,
+ False,
+ '3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit '
+ '(AMD64)]',
+ [('fbs_pyinstaller_hook',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\target\\PyInstaller\\fbs_pyinstaller_hook.py',
+   'PYSOURCE'),
+  ('pyi_rth_pyside2',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PyInstaller\\loader\\rthooks\\pyi_rth_pyside2.py',
+   'PYSOURCE'),
+  ('main',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\src\\main\\python\\main.py',
+   'PYSOURCE')],
+ [('ntpath',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ntpath.py',
+   'PYMODULE'),
+  ('_strptime',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_strptime.py',
+   'PYMODULE'),
+  ('datetime',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\datetime.py',
+   'PYMODULE'),
+  ('typing',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\typing.py',
+   'PYMODULE'),
+  ('tracemalloc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('stringprep',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stringprep.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_py_abc.py',
+   'PYMODULE'),
+  ('__future__',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\__future__.py',
+   'PYMODULE'),
+  ('difflib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\difflib.py',
+   'PYMODULE'),
+  ('ast',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ast.py',
+   'PYMODULE'),
+  ('inspect',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\inspect.py',
+   'PYMODULE'),
+  ('cmd',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\cmd.py',
+   'PYMODULE'),
+  ('bdb',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\bdb.py',
+   'PYMODULE'),
+  ('opcode',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\opcode.py',
+   'PYMODULE'),
+  ('dis',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\dis.py',
+   'PYMODULE'),
+  ('codeop',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\codeop.py',
+   'PYMODULE'),
+  ('code',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\code.py',
+   'PYMODULE'),
+  ('glob',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\glob.py',
+   'PYMODULE'),
+  ('shlex',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\shlex.py',
+   'PYMODULE'),
+  ('runpy',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\runpy.py',
+   'PYMODULE'),
+  ('importlib._bootstrap',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\_bootstrap.py',
+   'PYMODULE'),
+  ('importlib._bootstrap_external',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\_bootstrap_external.py',
+   'PYMODULE'),
+  ('importlib.machinery',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\machinery.py',
+   'PYMODULE'),
+  ('importlib.util',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\util.py',
+   'PYMODULE'),
+  ('importlib.abc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\abc.py',
+   'PYMODULE'),
+  ('importlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\importlib\\__init__.py',
+   'PYMODULE'),
+  ('pkgutil',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pkgutil.py',
+   'PYMODULE'),
+  ('xml',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.expatreader',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\expatreader.py',
+   'PYMODULE'),
+  ('xml.sax.saxutils',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\saxutils.py',
+   'PYMODULE'),
+  ('urllib.request',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\urllib\\request.py',
+   'PYMODULE'),
+  ('getpass',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\getpass.py',
+   'PYMODULE'),
+  ('nturl2path',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\nturl2path.py',
+   'PYMODULE'),
+  ('ftplib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ftplib.py',
+   'PYMODULE'),
+  ('netrc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\netrc.py',
+   'PYMODULE'),
+  ('http.cookiejar',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\cookiejar.py',
+   'PYMODULE'),
+  ('urllib.response',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\urllib\\response.py',
+   'PYMODULE'),
+  ('urllib.error',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\urllib\\error.py',
+   'PYMODULE'),
+  ('xml.sax',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\__init__.py',
+   'PYMODULE'),
+  ('xml.sax.handler',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\handler.py',
+   'PYMODULE'),
+  ('xml.sax._exceptions',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\_exceptions.py',
+   'PYMODULE'),
+  ('xml.sax.xmlreader',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\sax\\xmlreader.py',
+   'PYMODULE'),
+  ('xml.parsers',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\parsers\\__init__.py',
+   'PYMODULE'),
+  ('xml.parsers.expat',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\xml\\parsers\\expat.py',
+   'PYMODULE'),
+  ('plistlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\plistlib.py',
+   'PYMODULE'),
+  ('platform',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\platform.py',
+   'PYMODULE'),
+  ('distutils',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\distutils\\__init__.py',
+   'PYMODULE'),
+  ('distutils.log',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\distutils\\log.py',
+   'PYMODULE'),
+  ('_osx_support',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_osx_support.py',
+   'PYMODULE'),
+  ('sysconfig',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\sysconfig.py',
+   'PYMODULE'),
+  ('token',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\token.py',
+   'PYMODULE'),
+  ('tokenize',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tokenize.py',
+   'PYMODULE'),
+  ('urllib.parse',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\urllib\\parse.py',
+   'PYMODULE'),
+  ('tempfile',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tempfile.py',
+   'PYMODULE'),
+  ('tty',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tty.py',
+   'PYMODULE'),
+  ('pydoc_data',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pydoc_data\\__init__.py',
+   'PYMODULE'),
+  ('pydoc_data.topics',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pydoc_data\\topics.py',
+   'PYMODULE'),
+  ('html.entities',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\html\\entities.py',
+   'PYMODULE'),
+  ('html',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\html\\__init__.py',
+   'PYMODULE'),
+  ('ssl',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\ssl.py',
+   'PYMODULE'),
+  ('http.client',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\client.py',
+   'PYMODULE'),
+  ('mimetypes',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\mimetypes.py',
+   'PYMODULE'),
+  ('socketserver',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socketserver.py',
+   'PYMODULE'),
+  ('http',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\__init__.py',
+   'PYMODULE'),
+  ('http.server',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\http\\server.py',
+   'PYMODULE'),
+  ('optparse',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\optparse.py',
+   'PYMODULE'),
+  ('uu',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\uu.py',
+   'PYMODULE'),
+  ('quopri',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\quopri.py',
+   'PYMODULE'),
+  ('email.feedparser',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\feedparser.py',
+   'PYMODULE'),
+  ('email.parser',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\parser.py',
+   'PYMODULE'),
+  ('email',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\__init__.py',
+   'PYMODULE'),
+  ('calendar',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\calendar.py',
+   'PYMODULE'),
+  ('email._parseaddr',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\_parseaddr.py',
+   'PYMODULE'),
+  ('email.utils',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\utils.py',
+   'PYMODULE'),
+  ('email.errors',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\errors.py',
+   'PYMODULE'),
+  ('email.header',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\header.py',
+   'PYMODULE'),
+  ('email._policybase',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\_policybase.py',
+   'PYMODULE'),
+  ('email.base64mime',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\base64mime.py',
+   'PYMODULE'),
+  ('email.encoders',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\encoders.py',
+   'PYMODULE'),
+  ('email.charset',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\charset.py',
+   'PYMODULE'),
+  ('base64',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\base64.py',
+   'PYMODULE'),
+  ('email._encoded_words',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\_encoded_words.py',
+   'PYMODULE'),
+  ('hashlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\hashlib.py',
+   'PYMODULE'),
+  ('bisect',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\bisect.py',
+   'PYMODULE'),
+  ('random',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\random.py',
+   'PYMODULE'),
+  ('email.generator',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\generator.py',
+   'PYMODULE'),
+  ('email.iterators',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\iterators.py',
+   'PYMODULE'),
+  ('urllib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\urllib\\__init__.py',
+   'PYMODULE'),
+  ('email._header_value_parser',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\_header_value_parser.py',
+   'PYMODULE'),
+  ('email.headerregistry',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\headerregistry.py',
+   'PYMODULE'),
+  ('email.quoprimime',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\quoprimime.py',
+   'PYMODULE'),
+  ('email.contentmanager',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\contentmanager.py',
+   'PYMODULE'),
+  ('email.policy',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\policy.py',
+   'PYMODULE'),
+  ('email.message',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\email\\message.py',
+   'PYMODULE'),
+  ('bz2',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\bz2.py',
+   'PYMODULE'),
+  ('lzma',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\lzma.py',
+   'PYMODULE'),
+  ('_compression',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_compression.py',
+   'PYMODULE'),
+  ('gzip',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\gzip.py',
+   'PYMODULE'),
+  ('tarfile',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\tarfile.py',
+   'PYMODULE'),
+  ('py_compile',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\py_compile.py',
+   'PYMODULE'),
+  ('zipfile',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\zipfile.py',
+   'PYMODULE'),
+  ('shutil',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\shutil.py',
+   'PYMODULE'),
+  ('socket',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\socket.py',
+   'PYMODULE'),
+  ('webbrowser',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\webbrowser.py',
+   'PYMODULE'),
+  ('pydoc',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pydoc.py',
+   'PYMODULE'),
+  ('getopt',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\getopt.py',
+   'PYMODULE'),
+  ('pdb',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pdb.py',
+   'PYMODULE'),
+  ('unittest.util',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\util.py',
+   'PYMODULE'),
+  ('unittest.result',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\result.py',
+   'PYMODULE'),
+  ('string',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\string.py',
+   'PYMODULE'),
+  ('_compat_pickle',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_compat_pickle.py',
+   'PYMODULE'),
+  ('pickle',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pickle.py',
+   'PYMODULE'),
+  ('logging',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\logging\\__init__.py',
+   'PYMODULE'),
+  ('pprint',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pprint.py',
+   'PYMODULE'),
+  ('unittest.case',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\case.py',
+   'PYMODULE'),
+  ('unittest.suite',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\suite.py',
+   'PYMODULE'),
+  ('fnmatch',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\fnmatch.py',
+   'PYMODULE'),
+  ('unittest.loader',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\loader.py',
+   'PYMODULE'),
+  ('unittest.runner',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\runner.py',
+   'PYMODULE'),
+  ('unittest.main',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\main.py',
+   'PYMODULE'),
+  ('unittest.signals',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\signals.py',
+   'PYMODULE'),
+  ('unittest',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\unittest\\__init__.py',
+   'PYMODULE'),
+  ('struct',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\struct.py',
+   'PYMODULE'),
+  ('gettext',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\gettext.py',
+   'PYMODULE'),
+  ('copy',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\copy.py',
+   'PYMODULE'),
+  ('textwrap',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\textwrap.py',
+   'PYMODULE'),
+  ('argparse',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\argparse.py',
+   'PYMODULE'),
+  ('doctest',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\doctest.py',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\stat.py',
+   'PYMODULE'),
+  ('genericpath',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\genericpath.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\posixpath.py',
+   'PYMODULE'),
+  ('signal',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\signal.py',
+   'PYMODULE'),
+  ('contextlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\contextlib.py',
+   'PYMODULE'),
+  ('_threading_local',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\_threading_local.py',
+   'PYMODULE'),
+  ('threading',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\threading.py',
+   'PYMODULE'),
+  ('selectors',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\selectors.py',
+   'PYMODULE'),
+  ('subprocess',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\subprocess.py',
+   'PYMODULE'),
+  ('os',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\os.py',
+   'PYMODULE'),
+  ('package.main_window',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\src\\main\\python\\package\\main_window.py',
+   'PYMODULE'),
+  ('package', '-', 'PYMODULE'),
+  ('PySide2',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\__init__.py',
+   'PYMODULE'),
+  ('shiboken2',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\shiboken2\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime.application_context.PySide2',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\application_context\\PySide2.py',
+   'PYMODULE'),
+  ('fbs_runtime.application_context',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\application_context\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime.licensing',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\licensing.py',
+   'PYMODULE'),
+  ('json',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\__init__.py',
+   'PYMODULE'),
+  ('json.encoder',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\encoder.py',
+   'PYMODULE'),
+  ('json.decoder',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\decoder.py',
+   'PYMODULE'),
+  ('json.scanner',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\json\\scanner.py',
+   'PYMODULE'),
+  ('fbs_runtime.platform',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\platform.py',
+   'PYMODULE'),
+  ('fbs_runtime.excepthook',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\excepthook\\__init__.py',
+   'PYMODULE'),
+  ('fbs_runtime._signal',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\_signal.py',
+   'PYMODULE'),
+  ('fbs_runtime._resources',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\_resources.py',
+   'PYMODULE'),
+  ('fbs_runtime._source',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\_source.py',
+   'PYMODULE'),
+  ('pathlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\lib\\pathlib.py',
+   'PYMODULE'),
+  ('fbs_runtime._settings',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\_settings.py',
+   'PYMODULE'),
+  ('fbs_runtime._fbs',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\fbs_runtime\\_fbs.py',
+   'PYMODULE'),
+  ('fbs_runtime._frozen',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\_frozen.py',
+   'PYMODULE'),
+  ('fbs_runtime._state',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\fbs_runtime\\_state.py',
+   'PYMODULE'),
+  ('fbs_runtime',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\fbs_runtime\\__init__.py',
+   'PYMODULE')],
+ [('PySide2\\plugins\\platforms\\qoffscreen.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qoffscreen.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\iconengines\\qsvgicon.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\iconengines\\qsvgicon.dll',
+   'BINARY'),
+  ('libeay32.dll',
+   'C:\\Program Files\\Git\\mingw64\\bin\\libeay32.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\styles\\qwindowsvistastyle.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwbmp.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qwebp.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qwebp.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qminimal.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qminimal.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qwebgl.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwebgl.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platforminputcontexts\\qtvirtualkeyboardplugin.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qico.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qico.dll',
+   'BINARY'),
+  ('PySide2\\opengl32sw.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\opengl32sw.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\bearer\\qgenericbearer.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\bearer\\qgenericbearer.dll',
+   'BINARY'),
+  ('ssleay32.dll',
+   'C:\\Program Files\\Git\\mingw64\\bin\\ssleay32.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qtga.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtga.dll',
+   'BINARY'),
+  ('PySide2\\libEGL.dll',
+   'C:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\libEGL.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qtiff.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qtiff.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platforms\\qwindows.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platforms\\qwindows.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qgif.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qgif.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qsvg.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qsvg.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\platformthemes\\qxdgdesktopportal.dll',
+   'BINARY'),
+  ('PySide2\\libGLESv2.dll',
+   'C:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\libGLESv2.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qjpeg.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qjpeg.dll',
+   'BINARY'),
+  ('PySide2\\plugins\\imageformats\\qicns.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\plugins\\imageformats\\qicns.dll',
+   'BINARY'),
+  ('PySide2\\d3dcompiler_47.dll',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\d3dcompiler_47.dll',
+   'BINARY'),
+  ('_ssl',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\_ssl.pyd',
+   'EXTENSION'),
+  ('pyexpat',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\pyexpat.pyd',
+   'EXTENSION'),
+  ('unicodedata',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\unicodedata.pyd',
+   'EXTENSION'),
+  ('_hashlib',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\_hashlib.pyd',
+   'EXTENSION'),
+  ('_bz2',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\_bz2.pyd',
+   'EXTENSION'),
+  ('_lzma',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\_lzma.pyd',
+   'EXTENSION'),
+  ('_socket',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\_socket.pyd',
+   'EXTENSION'),
+  ('select',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\select.pyd',
+   'EXTENSION'),
+  ('PySide2.QtWidgets',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\QtWidgets.pyd',
+   'EXTENSION'),
+  ('PySide2.QtCore',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\QtCore.pyd',
+   'EXTENSION'),
+  ('PySide2.QtGui',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\QtGui.pyd',
+   'EXTENSION'),
+  ('PySide2.QtNetwork',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\QtNetwork.pyd',
+   'EXTENSION'),
+  ('shiboken2.shiboken2',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\shiboken2\\shiboken2.pyd',
+   'EXTENSION'),
+  ('Qt5Core.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5core.dll',
+   'BINARY'),
+  ('api-ms-win-crt-utility-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-math-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+   'BINARY'),
+  ('VCRUNTIME140.dll',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\vcruntime140.dll',
+   'BINARY'),
+  ('api-ms-win-crt-convert-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-environment-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-string-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-heap-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-stdio-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
+   'BINARY'),
+  ('Qt5Gui.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5gui.dll',
+   'BINARY'),
+  ('Qt5Svg.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5svg.dll',
+   'BINARY'),
+  ('Qt5Widgets.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\qt5widgets.dll',
+   'BINARY'),
+  ('Qt5Quick.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5quick.dll',
+   'BINARY'),
+  ('Qt5Network.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\qt5network.dll',
+   'BINARY'),
+  ('Qt5WebSockets.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\qt5websockets.dll',
+   'BINARY'),
+  ('Qt5VirtualKeyboard.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\qt5virtualkeyboard.dll',
+   'BINARY'),
+  ('Qt5Qml.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5qml.dll',
+   'BINARY'),
+  ('libGLESv2.dll',
+   'C:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\libGLESv2.dll',
+   'BINARY'),
+  ('Qt5DBus.dll',
+   'c:\\users\\mottier lucie\\venv\\lib\\site-packages\\PySide2\\qt5dbus.dll',
+   'BINARY'),
+  ('python37.dll',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\python37.dll',
+   'BINARY'),
+  ('libssl-1_1.dll',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\libssl-1_1.dll',
+   'BINARY'),
+  ('libcrypto-1_1.dll',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\DLLs\\libcrypto-1_1.dll',
+   'BINARY'),
+  ('python3.dll',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\python3.dll',
+   'BINARY'),
+  ('pyside2.abi3.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\pyside2.abi3.dll',
+   'BINARY'),
+  ('shiboken2.abi3.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\shiboken2\\shiboken2.abi3.dll',
+   'BINARY'),
+  ('api-ms-win-crt-time-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-filesystem-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-filesystem-l1-1-0.dll',
+   'BINARY'),
+  ('ucrtbase.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\ucrtbase.dll',
+   'BINARY'),
+  ('api-ms-win-crt-locale-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-conio-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-process-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-process-l1-1-0.dll',
+   'BINARY'),
+  ('MSVCP140.dll',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\shiboken2\\MSVCP140.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-localization-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-2-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-file-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-timezone-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-sysinfo-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-util-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l2-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-file-l2-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-memory-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-synch-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-interlocked-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-file-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-file-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-datetime-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+   'C:\\Program '
+   'Files\\TortoiseSVN\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-string-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-core-string-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-crt-multibyte-l1-1-0.dll',
+   'C:\\Program Files\\TortoiseSVN\\bin\\api-ms-win-crt-multibyte-l1-1-0.dll',
+   'BINARY')],
+ [],
+ [],
+ [('base_library.zip',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\Documents\\GitHub\\Udemy\\PySide2\\Warmup\\target\\PyInstaller\\Warmup\\base_library.zip',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_de.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_de.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ar.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ar.qm',
+   'DATA'),
+  ('PySide2\\support\\__init__.py',
+   'c:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\support\\__init__.py',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ko.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ko.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ca.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ca.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_pl.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_pl.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_uk.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_uk.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_lv.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_lv.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_zh_TW.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_zh_TW.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_bg.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_bg.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_cs.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_cs.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_sk.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_sk.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_en.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_en.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_es.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_es.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_gd.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_gd.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_he.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_he.qm',
+   'DATA'),
+  ('Include\\pyconfig.h',
+   'C:\\Users\\MOTTIER '
+   'LUCIE\\AppData\\Local\\Programs\\Python\\Python37\\Include\\pyconfig.h',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ja.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ja.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_fi.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fi.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_it.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_it.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_hu.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_hu.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_fr.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_fr.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_ru.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_ru.qm',
+   'DATA'),
+  ('PySide2\\translations\\qtbase_da.qm',
+   'C:\\users\\mottier '
+   'lucie\\venv\\lib\\site-packages\\PySide2\\translations\\qtbase_da.qm',
+   'DATA')],
+ [])
