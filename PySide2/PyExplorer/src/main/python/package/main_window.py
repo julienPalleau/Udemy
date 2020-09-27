@@ -1,4 +1,4 @@
-from PySide2 import QtWidgets
+from PySide2 import QtWidgets, QtCore
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -15,16 +15,25 @@ class MainWindow(QtWidgets.QMainWindow):
         self.setup_connections()
 
     def create_widgets(self):
-        pass
+        self.toolbar = QtWidgets.QToolBar()
+        self.tree_view = QtWidgets.QTreeView()
+        self.list_view = QtWidgets.QListView()
+        self.sld_iconSize = QtWidgets.QSlider()
+        self.main_widget = QtWidgets.QWidget()
 
     def modify_widgets(self):
         pass
 
     def create_layouts(self):
-        pass
+        self.main_layout = QtWidgets.QHBoxLayout(self.main_widget)
+
 
     def add_widgets_to_layouts(self):
-        pass
+        self.addToolBar(QtCore.Qt.TopToolBarArea, self.toolbar)
+        self.setCentralWidget(self.main_widget)
+        self.main_layout.addWidget(self.tree_view)
+        self.main_layout.addWidget(self.list_view)
+        self.main_layout.addWidget(self.sld_iconSize)
 
     def setup_connections(self):
         pass
