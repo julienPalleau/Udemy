@@ -39,6 +39,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def setup_connections(self):
         self.tree_view.clicked.connect(self.treeview_clicked)
         self.list_view.clicked.connect(self.listview_clicked)
+        self.list_view.doubleClicked.connect(self.listview_double_clicked)
 
     def create_file_model(self):
         self.model = QtWidgets.QFileSystemModel()
@@ -57,3 +58,6 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def listview_clicked(self, index):
         self.tree_view.selectionModel().setCurrentIndex(index, QtCore.QItemSelectionModel.ClearAndSelect)
+
+    def listview_double_clicked(self, index):
+        self.list_view.setRootIndex(index)
