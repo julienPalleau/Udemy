@@ -1,4 +1,5 @@
-from PySide2 import QtWidgets, QtCore
+from functools import partial
+from PySide2 import QtWidgets, QtCore, QtGui
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -13,8 +14,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.modify_widgets()
         self.create_layouts()
         self.add_widgets_to_layouts()
+        self.add_actions_to_toolbar()
         self.setup_connections()
         self.create_file_model()
+
 
     def create_widgets(self):
         self.toolbar = QtWidgets.QToolBar()
@@ -31,7 +34,10 @@ class MainWindow(QtWidgets.QMainWindow):
         self.list_view.setViewMode(QtWidgets.QListView.IconMode)
         self.list_view.setUniformItemSizes(True)
         self.list_view.setIconSize(QtCore.QSize(48, 48))
-        #
+
+        self.sld_iconSize.setRange(48, 256)
+        self.sld_iconSize.setValue(48)
+
         self.tree_view.setSortingEnabled(True)
         # self.tree_view.setAlternatingRowColors(True)
         self.tree_view.header().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
@@ -46,10 +52,29 @@ class MainWindow(QtWidgets.QMainWindow):
         self.main_layout.addWidget(self.list_view)
         self.main_layout.addWidget(self.sld_iconSize)
 
+    def add_actions_to_toolbar(self):
+        locations = ["home", "desktop", "documents", "movies", "music", "pictures"]
+        for location in locations:
+            icon = self.ctx.get_resource(f"{location}.svg")
+            action = self.toolbar.addAction(QtGui.QIcon(icon), location.capitalize())
+            action.triggered.connect(partial(self.change_location, location))
+
     def setup_connections(self):
         self.tree_view.clicked.connect(self.treeview_clicked)
         self.list_view.clicked.connect(self.listview_clicked)
         self.list_view.doubleClicked.connect(self.listview_double_clicked)
+        self.sld_iconSize.valueChanged.connect(self.change_icon_size)
+
+    def change_icon_size(self, value):
+        self.list_view.setIconSize(QtCore.QSize(value, value))
+
+
+    def change_location(self, location):
+        standard_path = QtCore.QStandardPaths()
+        path = eval(f"standard_path.standardLocations(QtCore.QStandardPaths.{location.capitalize()}Location)")
+        path = path[0]
+        self.tree_view.setRootIndex(self.model.index(path))
+        self.list_view.setRootIndex(self.model.index(path))
 
     def create_file_model(self):
         self.model = QtWidgets.QFileSystemModel()

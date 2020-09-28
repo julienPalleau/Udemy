@@ -75,7 +75,7 @@ QScrollBar::sub-line:horizontal {
 }
 
 QAbstractScrollArea {
-	background-color: #c9a9f8;
+	background-color: #19232D;
 }
 
 QScrollArea {
@@ -251,7 +251,7 @@ QTabBar::tab {
 	color: #F9AA33;
 }
 
-QListWidget {
+QListView {
 	border-radius: 4px;
 	border: 1px solid rgb(37, 37, 37);
 	background-color: rgb(30, 30, 30);
@@ -259,12 +259,12 @@ QListWidget {
 	font-size: 14px;
 }
 
-QListWidget::item {
+QListView::item {
 	border: 0px;
 	color: #fafafa;
 }
 
-QListWidget::item:selected {
+QListView::item:selected {
 	border: 0px;
 	background-color: #718792;
 }
@@ -273,14 +273,14 @@ QDockWidget::title {
 	background: #232323;
 }
 
-QTreeWidget {
+QTreeView {
 	border-radius: 4px;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(30, 30, 30);
 	alternate-background-color: rgb(29, 29, 29);
 	color: #fafafa;
 }
 
-QTreeWidget::item:selected {
+QTreeView::item:selected {
 	background-color: #718792;
 }
 
@@ -300,10 +300,9 @@ QHeaderView {
 }
 
 QHeaderView::section {
-	border: 1px solid rgb(100, 100, 100);
+	border: 0px solid rgb(100, 100, 100);
 	background-color: #232323;
 	color: #fafafa;
-	border-radius: 4px;
 }
 
 QSlider::groove:horizontal {
