@@ -24,7 +24,17 @@ class MainWindow(QtWidgets.QMainWindow):
         self.main_widget = QtWidgets.QWidget()
 
     def modify_widgets(self):
-        pass
+        css_file = self.ctx.get_resource("style.css")
+        with open(css_file, "r") as f:
+            self.setStyleSheet(f.read())
+
+        self.list_view.setViewMode(QtWidgets.QListView.IconMode)
+        self.list_view.setUniformItemSizes(True)
+        self.list_view.setIconSize(QtCore.QSize(48, 48))
+        #
+        self.tree_view.setSortingEnabled(True)
+        # self.tree_view.setAlternatingRowColors(True)
+        self.tree_view.header().setSectionResizeMode(QtWidgets.QHeaderView.ResizeToContents)
 
     def create_layouts(self):
         self.main_layout = QtWidgets.QHBoxLayout(self.main_widget)
