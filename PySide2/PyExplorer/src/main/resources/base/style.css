@@ -75,7 +75,7 @@ QScrollBar::sub-line:horizontal {
 }
 
 QAbstractScrollArea {
-	background-color: #ffffff;
+	background-color: #c9a9f8;
 }
 
 QScrollArea {
