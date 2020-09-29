@@ -4,18 +4,25 @@ from package.image import CustomImage
 
 
 class Worker(QtCore.QObject):
+    image_converted = QtCore.Signal(object, bool)
+    finished = QtCore.Signal()
+
     def __init__(self, images_to_convert, quality, size, folder):
         super().__init__()
         self.images_to_convert = images_to_convert
         self.quality = quality
         self.size = size
         self.folder = folder
+        self.runs = True
 
     def convert_images(self):
         for image_lw_item in self.images_to_convert:
-            if not image_lw_item.processed:
+            if self.runs and not image_lw_item.processed:
                 image = CustomImage(path=image_lw_item.text(), folder=self.folder)
-                image.reduce_image(size=self.size, quality=self.quality)
+                success = image.reduce_image(size=self.size, quality=self.quality)
+                self.image_converted.emit(image_lw_item, success)
+
+        self.finished.emit()
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -65,6 +72,8 @@ class MainWindow(QtWidgets.QWidget):
         self.lbl_dropInfo.setVisible(False)
 
         self.setAcceptDrops(True)  # on accepte que l'on puisse deposer des element sur l'interface
+        self.lw_files.setAlternatingRowColors(True)
+        self.lw_files.setSelectionMode(QtWidgets.QListWidget.ExtendedSelection)
 
     def create_layouts(self):
         self.main_layout = QtWidgets.QGridLayout(self)
@@ -85,7 +94,6 @@ class MainWindow(QtWidgets.QWidget):
         self.btn_convert.clicked.connect(self.convert_images)
 
     def convert_images(self):
-        print("Conversion activee")
         quality = self.spn_quality.value()
         size = self.spn_size.value() / 100.0
         folder = self.le_dossierOut.text()
@@ -105,11 +113,25 @@ class MainWindow(QtWidgets.QWidget):
                              size=size,
                              folder=folder)
 
-        print("Debug1")
         self.worker.moveToThread(self.thread)
+        self.worker.image_converted.connect(self.image_converted)
         self.thread.started.connect(self.worker.convert_images)
+        self.worker.finished.connect(self.thread.quit)
         self.thread.start()
-        print("Debug2")
+
+        self.prg_dialog = QtWidgets.QProgressDialog("Conversion des images", "Annuler...", 1, len(images_a_convertir))
+        self.prg_dialog.canceled.connect(self.abort)
+        self.prg_dialog.show()
+
+    def abort(self):
+        self.worker.runs = False
+        self.thread.quit()
+
+    def image_converted(self, lw_item, success):
+        if success:
+            lw_item.setIcon(self.ctx.img_checked)
+            lw_item.processed = True
+            self.prg_dialog.setValue(self.prg_dialog.value() + 1)
 
     def delete_selected_items(self):
         for lw_item in self.lw_files.selectedItems():
