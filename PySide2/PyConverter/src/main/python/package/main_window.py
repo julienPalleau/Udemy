@@ -1,4 +1,4 @@
-from PySide2 import QtWidgets, QtCore
+from PySide2 import QtWidgets, QtCore, QtGui
 
 
 class MainWindow(QtWidgets.QWidget):
@@ -64,7 +64,16 @@ class MainWindow(QtWidgets.QWidget):
         self.main_layout.addWidget(self.btn_convert, 5, 0, 1, 2)
 
     def setup_connections(self):
-        pass
+        QtWidgets.QShortcut(QtGui.QKeySequence("Delete"), self.lw_files, self.delete_selected_items)
+        self.btn_convert.clicked.connect(self.convert_images)
+
+    def convert_images(self):
+        print("Conversion des images")
+
+    def delete_selected_items(self):
+        for lw_item in self.lw_files.selectedItems():
+            row = self.lw_files.row(lw_item)
+            self.lw_files.takeItem(row)
 
     def dragEnterEvent(self, event):
         self.lbl_dropInfo.setVisible(True)
@@ -76,6 +85,14 @@ class MainWindow(QtWidgets.QWidget):
     def dropEvent(self, event):
         event.accept()
         for url in event.mimeData().urls():
-            self.lw_files.addItem(url.toLocalFile())
+            self.add_file(path=url.toLocalFile())
 
         self.lbl_dropInfo.setVisible(False)
+
+    def add_file(self, path):
+        items = [self.lw_files.item(index).text() for index in range(self.lw_files.count())]
+        if path not in items:
+            lw_item = QtWidgets.QListWidgetItem(path)
+            lw_item.setIcon(self.ctx.img_unchecked)
+            lw_item.processed = False
+            self.lw_files.addItem(lw_item)

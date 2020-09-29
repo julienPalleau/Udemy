@@ -21,6 +21,7 @@ class AppContext(ApplicationContext):
     def img_unchecked(self):
         return QtGui.QIcon(self.get_resource("images/unchecked.png"))
 
+
 if __name__ == '__main__':
     appctxt = AppContext()
     sys.exit(appctxt.run())
