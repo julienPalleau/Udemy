@@ -1,5 +1,22 @@
 from PySide2 import QtWidgets, QtCore, QtGui
 
+from package.image import CustomImage
+
+
+class Worker(QtCore.QObject):
+    def __init__(self, images_to_convert, quality, size, folder):
+        super().__init__()
+        self.images_to_convert = images_to_convert
+        self.quality = quality
+        self.size = size
+        self.folder = folder
+
+    def convert_images(self):
+        for image_lw_item in self.images_to_convert:
+            if not image_lw_item.processed:
+                image = CustomImage(path=image_lw_item.text(), folder=self.folder)
+                image.reduce_image(size=self.size, quality=self.quality)
+
 
 class MainWindow(QtWidgets.QWidget):
     def __init__(self, ctx):
@@ -68,7 +85,31 @@ class MainWindow(QtWidgets.QWidget):
         self.btn_convert.clicked.connect(self.convert_images)
 
     def convert_images(self):
-        print("Conversion des images")
+        print("Conversion activee")
+        quality = self.spn_quality.value()
+        size = self.spn_size.value() / 100.0
+        folder = self.le_dossierOut.text()
+
+        lw_items = [self.lw_files.item(index) for index in range(self.lw_files.count())]
+        images_a_convertir = [1 for lw_item in lw_items if not lw_item.processed]
+        if not images_a_convertir:
+            msg_box = QtWidgets.QMessageBox(QtWidgets.QMessageBox.Warning, "Aucune image à convertir",
+                                            "Toutes les images ont deja ete converties.")
+            msg_box.exec_()
+            return False
+
+        self.thread = QtCore.QThread(self)
+
+        self.worker = Worker(images_to_convert=lw_items,
+                             quality=quality,
+                             size=size,
+                             folder=folder)
+
+        print("Debug1")
+        self.worker.moveToThread(self.thread)
+        self.thread.started.connect(self.worker.convert_images)
+        self.thread.start()
+        print("Debug2")
 
     def delete_selected_items(self):
         for lw_item in self.lw_files.selectedItems():
