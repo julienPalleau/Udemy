@@ -1,5 +1,3 @@
-import platform
-
 from PySide2 import QtWidgets, QtCore, QtGui
 
 import package.api.task
@@ -109,15 +107,6 @@ class MainWindow(QtWidgets.QWidget):
             package.api.task.add_task(name=task_name)
             self.get_tasks()
 
-    def center_under_tray(self):
-        tray_x = self.tray.geometry().x()
-        tray_y = self.tray.geometry().y()
-        w, h = self.sizeHint().toTuple()
-        if platform.system() == 'Windows':
-            self.move(w * 2 + 100, tray_y - h)
-        else:
-            self.move(tray_x - (w / 2), 25)
-
     def clean_task(self):
         for i in range(self.lw_tasks.count()):
             lw_item = self.lw_tasks.item(i)
@@ -133,8 +122,13 @@ class MainWindow(QtWidgets.QWidget):
             TaskItem(name=task_name, done=done, list_widget=self.lw_tasks)
 
     def tray_icon_click(self):
-        print("Debug tray_icon_click")
         if self.isHidden():
             self.showNormal()
+            self.center_under_tray()
         else:
             self.hide()
+
+    def center_under_tray(self):
+        tray_y = self.tray.geometry().y()
+        w, h = self.sizeHint().toTuple()
+        self.move(w * 2 + 100, tray_y - h)
