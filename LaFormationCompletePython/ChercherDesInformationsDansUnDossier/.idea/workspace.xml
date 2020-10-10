@@ -49,8 +49,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc05873-3c00-4435-94a7-98772b62e5f6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/a_sky_full_of_stars.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/berlin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/database.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_02.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_03.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_04.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_05.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/grece.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/now_that_your_gone.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/stats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/used_to_be.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0002.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_italie.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chercherdesinformationsdansundossier.py" beforeDir="false" afterPath="$PROJECT_DIR$/chercherdesinformationsdansundossier.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +89,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -158,26 +175,26 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="587" y="148" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602174023696" />
-    <state x="740" y="347" key="FileChooserDialogImpl" timestamp="1602173528772">
+    <state x="740" y="347" key="FileChooserDialogImpl" timestamp="1602258441051">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="740" y="347" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602173528772" />
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1602257595794">
+    <state x="740" y="347" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602258441051" />
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1602258443020">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602257595794" />
-    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1602257595794">
+    <state width="1899" height="321" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602258443020" />
+    <state width="1899" height="321" key="GridCell.Tab.0.center" timestamp="1602258443019">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602257595794" />
-    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1602257595794">
+    <state width="1899" height="321" key="GridCell.Tab.0.center/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602258443019" />
+    <state width="1899" height="321" key="GridCell.Tab.0.left" timestamp="1602258443019">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602257595794" />
-    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1602257595794">
+    <state width="1899" height="321" key="GridCell.Tab.0.left/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602258443019" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right" timestamp="1602258443019">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602257595794" />
+    <state width="1899" height="321" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1602258443019" />
     <state x="461" y="225" key="SettingsEditor" timestamp="1602173478075">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
