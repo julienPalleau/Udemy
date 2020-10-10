@@ -49,25 +49,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbc05873-3c00-4435-94a7-98772b62e5f6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/a_sky_full_of_stars.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/berlin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/database.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_02.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_03.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_04.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_05.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/grece.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/now_that_your_gone.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/stats.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/used_to_be.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0001.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0002.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_italie.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ChercherDesInformationsDansUnDossier.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StrutuctureDeDossier/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Documents/facture_01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Documents/facture_02.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Documents/facture_03.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Documents/facture_04.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Documents/facture_05.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Images/berlin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Images/image_01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Images/image_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Images/vacances_01_0001.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Images/vacances_01_0002.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Musique/a_sky_full_of_stars.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Musique/now_that_your_gone.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Musique/used_to_be.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Videos/grece.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/Videos/vacances_italie.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../StrutuctureDeDossier/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../StrutuctureDeDossier/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/a_sky_full_of_stars.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/berlin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_02.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_03.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_04.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/facture_05.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/fichier1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/grece.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/image_02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/now_that_your_gone.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/trier_des_fichiers_selon_leur_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/trier_des_fichiers_selon_leur_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/used_to_be.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0001.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_01_0002.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType/vacances_italie.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +106,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TrierDesFichiersSelonLeurType" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
