@@ -14,12 +14,14 @@
 
 # Correction
 with open("prenom.txt", "r") as f:
-    lines = f.read().splitlines()
+    lines = f.read().splitlines()   # Optional. Specifies if the line breaks should be included (True), or not (False).
+                                    # Default value is not (False)
 
 prenoms = []
 for line in lines:
-    prenoms.extend(line.split())
+    prenoms.extend(line.split())    # The split() method splits a string into a list.
+                                    # extend permet d'ajouter des elements à la fin de la liste existante.
 
 prenoms_final = [prenom.strip(",. ") for prenom in prenoms]
 with open("prenom_final.txt", "w") as f:
-     f.write("\n".join(sorted(prenoms_final)))
+    f.write("\n".join(sorted(prenoms_final)))
