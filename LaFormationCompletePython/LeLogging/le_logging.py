@@ -1,7 +1,8 @@
 import logging
+
 """ on definit ci-dessous le niveau de debug que l'on souhaite
- par defaut le niveau est sur warning, et le set à DEBUG"""
-#logging.basicConfig(level=logging.DEBUG)
+ par defaut le niveau est sur warning, et ci-dessous il est à DEBUG"""
+# logging.basicConfig(level=logging.DEBUG)
 
 """
 level : parametre pour decrire le niveau de log desire. Choix entre
