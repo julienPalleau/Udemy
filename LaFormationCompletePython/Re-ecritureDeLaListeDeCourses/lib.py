@@ -53,5 +53,4 @@ if __name__ == "__main__":
     liste = Liste("courses")
     liste.ajouter("Pommes")
     liste.ajouter("Poires")
-    liste.afficher()
     liste.sauvegarder()
