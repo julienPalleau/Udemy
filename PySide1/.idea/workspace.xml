@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711e9f12-4985-4449-8e41-e79ace5c3ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/PremiereApplication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/__main___.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/fenetre_principale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/fenetre_principale.py" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/fenetre_principale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PySide2/LesInterfacesGraphiquesAvecPyside/PremiereApplication.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PySide2/LesInterfacesGraphiquesAvecPyside/__main___.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
