@@ -72,49 +72,96 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 
 
 ## Le QGridLayout
+# class MonApplication(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(MonApplication, self).__init__()
+#
+#         layout = QtWidgets.QGridLayout(self)
+#
+#         # # Exemple 1
+#         # btn_1 = QtWidgets.QPushButton('0.0')
+#         # btn_2 = QtWidgets.QPushButton('0.1')
+#         # btn_3 = QtWidgets.QPushButton('0.2')
+#         # btn_4 = QtWidgets.QPushButton('1.0')
+#         # btn_5 = QtWidgets.QPushButton('1.1')
+#         # btn_6 = QtWidgets.QPushButton('1.2')
+#         # btn_7 = QtWidgets.QPushButton('2.0')
+#         # btn_8 = QtWidgets.QPushButton('2.1')
+#         # btn_9 = QtWidgets.QPushButton('2.2')
+#         #
+#         # layout.addWidget(btn_1, 0, 0)
+#         # layout.addWidget(btn_2, 0, 1)
+#         # layout.addWidget(btn_3, 0, 2)
+#         # layout.addWidget(btn_4, 1, 0)
+#         # layout.addWidget(btn_5, 1, 1)
+#         # layout.addWidget(btn_6, 1, 2)
+#         # layout.addWidget(btn_7, 2, 0)
+#         # layout.addWidget(btn_8, 2, 1)
+#         # layout.addWidget(btn_9, 2, 2)
+#
+#         # Exemple 2
+#         btn_1 = QtWidgets.QPushButton('0.0-1x3')
+#         btn_2 = QtWidgets.QPushButton('1.0-1x1')
+#         btn_3 = QtWidgets.QPushButton('1.1-1x1')
+#         btn_4 = QtWidgets.QPushButton('1.2-1x1')
+#
+#         layout.addWidget(btn_1, 0, 0, 1, 3)
+#         layout.addWidget(btn_2, 1, 0, 1, 1)
+#         layout.addWidget(btn_3, 1, 1, 1, 1)
+#         layout.addWidget(btn_4, 1, 2, 1, 1)
+
+
+## Le QHBoxLayout et le QVBoxLayout
+# class MonApplication(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(MonApplication, self).__init__()
+#
+#         # layout = QtWidgets.QVBoxLayout(self)
+#         layout = QtWidgets.QHBoxLayout(self)
+#
+#         btn_1 = QtWidgets.QPushButton('Bouton n1', self)
+#         btn_2 = QtWidgets.QPushButton('Bouton n2', self)
+#         btn_3 = QtWidgets.QPushButton('Bouton n3', self)
+#
+#         layout.addWidget(btn_1)
+#         layout.addWidget(btn_2)
+#         layout.addWidget(btn_3)
+
+## Combiner les layouts
 class MonApplication(QtWidgets.QWidget):
     def __init__(self):
         super(MonApplication, self).__init__()
 
-        layout = QtWidgets.QGridLayout(self)
+        layoutPrincipal = QtWidgets.QHBoxLayout(self)
 
-        # # Exemple 1
-        # btn_1 = QtWidgets.QPushButton('0.0')
-        # btn_2 = QtWidgets.QPushButton('0.1')
-        # btn_3 = QtWidgets.QPushButton('0.2')
-        # btn_4 = QtWidgets.QPushButton('1.0')
-        # btn_5 = QtWidgets.QPushButton('1.1')
-        # btn_6 = QtWidgets.QPushButton('1.2')
-        # btn_7 = QtWidgets.QPushButton('2.0')
-        # btn_8 = QtWidgets.QPushButton('2.1')
-        # btn_9 = QtWidgets.QPushButton('2.2')
-        #
-        # layout.addWidget(btn_1, 0, 0)
-        # layout.addWidget(btn_2, 0, 1)
-        # layout.addWidget(btn_3, 0, 2)
-        # layout.addWidget(btn_4, 1, 0)
-        # layout.addWidget(btn_5, 1, 1)
-        # layout.addWidget(btn_6, 1, 2)
-        # layout.addWidget(btn_7, 2, 0)
-        # layout.addWidget(btn_8, 2, 1)
-        # layout.addWidget(btn_9, 2, 2)
+        layoutGauche = QtWidgets.QVBoxLayout()
+        layoutDroite = QtWidgets.QVBoxLayout()
+        layoutPrincipal.addLayout(layoutGauche)
+        layoutPrincipal.addLayout(layoutDroite)
 
-        # Exemple 2
-        btn_1 = QtWidgets.QPushButton('0.0-1x3')
-        btn_2 = QtWidgets.QPushButton('1.0-1x1')
-        btn_3 = QtWidgets.QPushButton('1.1-1x1')
-        btn_4 = QtWidgets.QPushButton('1.2-1x1')
+        btn_1 = QtWidgets.QPushButton('Bouton n1', self)
+        btn_2 = QtWidgets.QPushButton('Bouton n2', self)
+        btn_3 = QtWidgets.QPushButton('Bouton n3', self)
 
-        layout.addWidget(btn_1, 0, 0, 1, 3)
-        layout.addWidget(btn_2, 1, 0, 1, 1)
-        layout.addWidget(btn_3, 1, 1, 1, 1)
-        layout.addWidget(btn_4, 1, 2, 1, 1)
+        layoutGauche.addWidget(btn_1)
+        layoutGauche.addWidget(btn_2)
+        layoutGauche.addWidget(btn_3)
+
+        btn_4 = QtWidgets.QPushButton('Bouton n4', self)
+        btn_5 = QtWidgets.QPushButton('Bouton n5', self)
+        btn_6 = QtWidgets.QPushButton('Bouton n6', self)
+
+        layoutDroite.addWidget(btn_4)
+        layoutDroite.addWidget(btn_5)
+        layoutDroite.addWidget(btn_6)
 
 
-## Le QHBoxLayout et le QVBoxLayout
+## Le QListWidget
 
 
         self.resize(500, 500)
+
+
 
 app = QtWidgets.QApplication([])
 fenetre = MonApplication()

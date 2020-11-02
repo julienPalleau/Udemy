@@ -4,8 +4,6 @@
     <list default="true" id="711e9f12-4985-4449-8e41-e79ace5c3ca0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/fenetre_principale.py" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/fenetre_principale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySide2/LesInterfacesGraphiquesAvecPyside/PremiereApplication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PySide2/LesInterfacesGraphiquesAvecPyside/__main___.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,18 +113,32 @@
       <option name="presentableId" value="Default" />
       <updated>1603552756213</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1604222157623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604222157623</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/../.." />
     </ignored-roots>
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="235" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604135669214">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="235" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604135669214" />
+    <state x="589" y="165" key="CommitChangelistDialog2" timestamp="1604222156518">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="589" y="165" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604222156518" />
     <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1603555244144">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -151,5 +163,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604216502754" />
+    <state x="554" y="330" key="Vcs.Push.Dialog.v2" timestamp="1604222184712">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="554" y="330" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604222184712" />
   </component>
 </project>
