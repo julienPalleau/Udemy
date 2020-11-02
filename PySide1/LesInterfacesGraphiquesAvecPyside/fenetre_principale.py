@@ -1,4 +1,6 @@
-from PySide2 import QtWidgets
+from PySide2 import QtWidgets, QtCore
+import sys
+import time
 
 """
 PySide documentation: http://pyside.github.io/docs/pyside/
@@ -128,42 +130,104 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 #         layout.addWidget(btn_3)
 
 ## Combiner les layouts
-class MonApplication(QtWidgets.QWidget):
-    def __init__(self):
-        super(MonApplication, self).__init__()
-
-        layoutPrincipal = QtWidgets.QHBoxLayout(self)
-
-        layoutGauche = QtWidgets.QVBoxLayout()
-        layoutDroite = QtWidgets.QVBoxLayout()
-        layoutPrincipal.addLayout(layoutGauche)
-        layoutPrincipal.addLayout(layoutDroite)
-
-        btn_1 = QtWidgets.QPushButton('Bouton n1', self)
-        btn_2 = QtWidgets.QPushButton('Bouton n2', self)
-        btn_3 = QtWidgets.QPushButton('Bouton n3', self)
-
-        layoutGauche.addWidget(btn_1)
-        layoutGauche.addWidget(btn_2)
-        layoutGauche.addWidget(btn_3)
-
-        btn_4 = QtWidgets.QPushButton('Bouton n4', self)
-        btn_5 = QtWidgets.QPushButton('Bouton n5', self)
-        btn_6 = QtWidgets.QPushButton('Bouton n6', self)
-
-        layoutDroite.addWidget(btn_4)
-        layoutDroite.addWidget(btn_5)
-        layoutDroite.addWidget(btn_6)
-
+# class MonApplication(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(MonApplication, self).__init__()
+#
+#         layoutPrincipal = QtWidgets.QHBoxLayout(self)
+#
+#         layoutGauche = QtWidgets.QVBoxLayout()
+#         layoutDroite = QtWidgets.QVBoxLayout()
+#         layoutPrincipal.addLayout(layoutGauche)
+#         layoutPrincipal.addLayout(layoutDroite)
+#
+#         btn_1 = QtWidgets.QPushButton('Bouton n1', self)
+#         btn_2 = QtWidgets.QPushButton('Bouton n2', self)
+#         btn_3 = QtWidgets.QPushButton('Bouton n3', self)
+#
+#         layoutGauche.addWidget(btn_1)
+#         layoutGauche.addWidget(btn_2)
+#         layoutGauche.addWidget(btn_3)
+#
+#         btn_4 = QtWidgets.QPushButton('Bouton n4', self)
+#         btn_5 = QtWidgets.QPushButton('Bouton n5', self)
+#         btn_6 = QtWidgets.QPushButton('Bouton n6', self)
+#
+#         layoutDroite.addWidget(btn_4)
+#         layoutDroite.addWidget(btn_5)
+#         layoutDroite.addWidget(btn_6)
+#
+#         self.resize(500, 500)
 
 ## Le QListWidget
 
+# class FenetrePrincipale(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(FenetrePrincipale, self).__init__()
+#
+#         layout = QtWidgets.QHBoxLayout(self)
+#
+#         lw_demo = QtWidgets.QListWidget(self)
+#         lw_demo.addItem('Premier Item')
+#         lw_demo.addItem('Deuxieme Item')
+#         lw_demo.addItems(['Troisieme Item', 'Quatrieme Item', 'Cinquieme Item'])
+#         lw_demo.setDragDropMode(QtWidgets.QAbstractItemView.InternalMove)
+#
+#         layout.addWidget(lw_demo)
 
-        self.resize(500, 500)
+## Le QCheckBox
 
+# class FenetrePrincipale(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(FenetrePrincipale, self).__init__()
+#
+#         self.setWindowTitle('Mon Application')
+#
+#         layout = QtWidgets.QHBoxLayout(self)
+#
+#         chk_demo = QtWidgets.QCheckBox('Ceci est une checkbox')
+#         chk_demo.setCheckState(QtCore.Qt.Checked)
+#         print(chk_demo.checkState())
+#
+#         layout.addWidget(chk_demo)
+
+## Le QComboBox
+# class FenetrePrincipale(QtWidgets.QWidget):
+#     def __init__(self):
+#         super(FenetrePrincipale, self).__init__()
+#
+#         self.setWindowTitle('Mon Application')
+#
+#         layout = QtWidgets.QHBoxLayout(self)
+#         cbb_demo = QtWidgets.QComboBox()
+#         cbb_demo.addItem('Premier Item')
+#         cbb_demo.addItems(['Deuxieme Item', 'Troisieme Item'])
+#         # cbb_demo.setCurrentIndex(2)
+#         cbb_demo.setCurrentIndex(cbb_demo.count() - 1)  # selection du dernier item si on ne connait pas le nombre
+#         # d'item
+#         cbb_demo.setItemText(0, 'First')
+#         cbb_demo.setItemText(cbb_demo.count() - 1, 'Last Item')
+#
+#         layout.addWidget(cbb_demo)
+
+## Le QProgressBar
+class FenetrePrincipale(QtWidgets.QWidget):
+    def __init__(self):
+        super(FenetrePrincipale, self).__init__()
+
+        self.setWindowTitle('Mon Application')
+
+        layout = QtWidgets.QHBoxLayout(self)
+        prg_demo = QtWidgets.QProgressBar()
+        prg_demo.setRange(0, 10)
+        prg_demo.setValue(6)
+        prg_demo.setTextVisible(False)  # Desactive le text ex: 60%
+
+        layout.addWidget(prg_demo)
 
 
 app = QtWidgets.QApplication([])
-fenetre = MonApplication()
+# fenetre = MonApplication()
+fenetre = FenetrePrincipale()
 fenetre.show()
 app.exec_()
