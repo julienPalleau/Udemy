@@ -14,7 +14,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## CREATION D'UNE FENETRE VIDE
 # class FenetrePrincipale(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(FenetrePrincipale, self).__init__()
+#         super().__init__()
 #
 #         self.setWindowTitle("Ma Premiere Applicaiton")
 #
@@ -64,7 +64,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## COORDONNEES ABSOLUES
 # class MonApplication(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(MonApplication, self).__init__()
+#         super().__init__()
 #
 #         btn_bonjour = QtWidgets.QPushButton('Bonjour', self)
 #         btn_bonjour.move(10, 10)  # coordonnees en absolues (par rapport au point 0,0 situe en haut à gauche)
@@ -76,7 +76,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## Le QGridLayout
 # class MonApplication(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(MonApplication, self).__init__()
+#         super().__init__()
 #
 #         layout = QtWidgets.QGridLayout(self)
 #
@@ -116,7 +116,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## Le QHBoxLayout et le QVBoxLayout
 # class MonApplication(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(MonApplication, self).__init__()
+#         super().__init__()
 #
 #         # layout = QtWidgets.QVBoxLayout(self)
 #         layout = QtWidgets.QHBoxLayout(self)
@@ -132,7 +132,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## Combiner les layouts
 # class MonApplication(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(MonApplication, self).__init__()
+#         super().__init__()
 #
 #         layoutPrincipal = QtWidgets.QHBoxLayout(self)
 #
@@ -163,7 +163,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 
 # class FenetrePrincipale(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(FenetrePrincipale, self).__init__()
+#         super().__init__()
 #
 #         layout = QtWidgets.QHBoxLayout(self)
 #
@@ -179,7 +179,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 
 # class FenetrePrincipale(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(FenetrePrincipale, self).__init__()
+#         super().__init__()
 #
 #         self.setWindowTitle('Mon Application')
 #
@@ -194,7 +194,7 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 ## Le QComboBox
 # class FenetrePrincipale(QtWidgets.QWidget):
 #     def __init__(self):
-#         super(FenetrePrincipale, self).__init__()
+#         super().__init__()
 #
 #         self.setWindowTitle('Mon Application')
 #
@@ -211,20 +211,66 @@ PySide documentation: http://pyside.github.io/docs/pyside/
 #         layout.addWidget(cbb_demo)
 
 ## Le QProgressBar
-class FenetrePrincipale(QtWidgets.QWidget):
-    def __init__(self):
-        super(FenetrePrincipale, self).__init__()
+# class FenetrePrincipale(QtWidgets.QWidget):
+#     def __init__(self):
+#         super().__init__()
+#
+#         self.setWindowTitle('Mon Application')
+#
+#         layout = QtWidgets.QHBoxLayout(self)
+#         prg_demo = QtWidgets.QProgressBar()
+#         prg_demo.setRange(0, 10)
+#         prg_demo.setValue(6)
+#         prg_demo.setTextVisible(False)  # Desactive le text ex: 60%
+#
+#         layout.addWidget(prg_demo)
 
-        self.setWindowTitle('Mon Application')
+###############
+# Les signaux #
+###############
+
+## Connexions simples
+# class FenetrePrincipale(QtWidgets.QWidget):
+#     def __init__(self):
+#         super().__init__()
+#
+#         self.setWindowTitle('Les Signaux')
+#         layout = QtWidgets.QHBoxLayout(self)
+#         btn = QtWidgets.QPushButton('Clique')
+#         btn.clicked.connect(self.cliquerSurLeBouton)
+#
+#         layout.addWidget(btn)
+#
+#     def cliquerSurLeBouton(self):
+#         print('Bouton Clique')
+
+## Connexions avec arguments
+from functools import partial
+
+class FenetrePrincipale(QtWidgets.QWidget):
+
+
+    ("Ici on a deux boutons bouton1 et bouton2 qui appellent la meme fonction (boutonClicked). On va donc passer\n"
+     "un argument à la fonction boutonClicked, pour cela il faut importer partial (from functools import partial)\n"
+     "et lorsque l'on connect le bouton on passe l'argument")
+    def __init__(self):
+        super().__init__()
+
+        self.setWindowTitle('Les Signaux')
 
         layout = QtWidgets.QHBoxLayout(self)
-        prg_demo = QtWidgets.QProgressBar()
-        prg_demo.setRange(0, 10)
-        prg_demo.setValue(6)
-        prg_demo.setTextVisible(False)  # Desactive le text ex: 60%
 
-        layout.addWidget(prg_demo)
+        btn_01 = QtWidgets.QPushButton('Premier Bouton')
+        btn_01.clicked.connect(partial(self.boutonClicked, 'Premier Bouton Clique'))
 
+        btn_02 = QtWidgets.QPushButton('Deuxieme Bouton')
+        btn_02.clicked.connect(partial(self.boutonClicked, 'Deuxieme Bouton Clique'))
+
+        layout.addWidget(btn_01)
+        layout.addWidget(btn_02)
+
+    def boutonClicked(self, texte):
+        print(texte)
 
 app = QtWidgets.QApplication([])
 # fenetre = MonApplication()
