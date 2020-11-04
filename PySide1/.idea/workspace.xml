@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711e9f12-4985-4449-8e41-e79ace5c3ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LaCreationdInterfaceGraphiqueQtDesigner/monApplication.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LaCreationdInterfaceGraphiqueQtDesigner/monInterface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/TP1-CreationCalculatrice.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/custom_ui/FenetrePrincipale.ui" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/custom_ui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/custom_ui/calculatriceV1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/custom_ui/fenetrePrincipale.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/LesShortcuts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/calculatrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/calculatrice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,23 +32,20 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PySide2/PyExplorer" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
-  <component name="RunManager" selected="Python.monApplication">
-    <configuration name="PremiereApplication" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.LesShortcuts">
+    <configuration name="LesShortcuts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LesInterfacesGraphiquesAvecPyside" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Program Files\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/PremiereApplication.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/LesShortcuts.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -138,6 +121,9 @@
       <module name="LesInterfacesGraphiquesAvecPyside" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="true" />
@@ -171,19 +157,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.PremiereApplication" />
       <item itemvalue="Python.fenetre_principale" />
       <item itemvalue="Python.calculatrice" />
       <item itemvalue="Python.monApplication" />
       <item itemvalue="Python.monInterface" />
+      <item itemvalue="Python.LesShortcuts" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.monApplication" />
-        <item itemvalue="Python.monApplication" />
-        <item itemvalue="Python.monApplication" />
-        <item itemvalue="Python.monApplication" />
+        <item itemvalue="Python.LesShortcuts" />
         <item itemvalue="Python.monInterface" />
+        <item itemvalue="Python.monApplication" />
+        <item itemvalue="Python.monApplication" />
+        <item itemvalue="Python.monApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -247,10 +233,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="589" y="165" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604408061702" />
-    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1604489039393">
+    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1604517196467">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604489039393" />
+    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604517196467" />
     <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1603555462882">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
