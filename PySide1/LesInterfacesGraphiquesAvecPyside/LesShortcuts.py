@@ -1,4 +1,5 @@
-from PySide2 import QtWidgets, QtGui
+from PyQt5 import QtWidgets, QtGui
+#  from PySide2 import QtWidgets, QtGui # both are working
 
 
 class FenetrePrincipale(QtWidgets.QWidget):

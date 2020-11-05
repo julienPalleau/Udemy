@@ -1,4 +1,4 @@
-from PyQt5 import QtCore, QtWidgets
+from PyQt5 import QtCore, QtWidgets, QtGui
 from functools import partial
 from custom_ui.fenetrePrincipale import Ui_form_calculatrice
 
@@ -11,7 +11,7 @@ class Calculatrice(Ui_form_calculatrice, QtWidgets.QWidget):
         self.setupUi(self)
         self.modificationSetupUi()
         self.setupConnections()
-
+        self.setupRaccourcisClavier()
         self.show()
 
     def modificationSetupUi(self):
@@ -36,6 +36,18 @@ class Calculatrice(Ui_form_calculatrice, QtWidgets.QWidget):
         self.btn_egal.clicked.connect(self.calculOperation)
         self.btn_c.clicked.connect(self.supprimerResultat)
 
+    def setupRaccourcisClavier(self):
+        for btn in range(10):
+            QtWidgets.QShortcut(QtGui.QKeySequence(str(btn)), self, partial(self.btnNombrePressed, str(btn)))
+
+        QtWidgets.QShortcut(QtGui.QKeySequence(str(self.btn_plus.text())), self, partial(self.btnOperationPressed, str(self.btn_plus.text())))
+        QtWidgets.QShortcut(QtGui.QKeySequence(str(self.btn_moins.text())), self, partial(self.btnOperationPressed, str(self.btn_moins.text())))
+        QtWidgets.QShortcut(QtGui.QKeySequence(str(self.btn_mult.text())), self, partial(self.btnOperationPressed, str(self.btn_mult.text())))
+        QtWidgets.QShortcut(QtGui.QKeySequence(str(self.btn_div.text())), self, partial(self.btnOperationPressed, str(self.btn_div.text())))
+        QtWidgets.QShortcut(QtGui.QKeySequence('Enter'), self, self.calculOperation)
+        QtWidgets.QShortcut(QtGui.QKeySequence('Del'), self, self.supprimerResultat)
+        QtWidgets.QShortcut(QtGui.QKeySequence('Escape'), self, self.close)
+
     def btnNombrePressed(self, bouton):
         """Fonction activee quand l'utilisateur appuie sur un numero (0-9)"""
 
@@ -59,13 +71,14 @@ class Calculatrice(Ui_form_calculatrice, QtWidgets.QWidget):
         """
 
         # On recupere le texte dans le LineEdit operation
-        operationText = str(self.le_operation.text())
+        # operationText = str(self.le_operation.text())
         # On recupere le texte dans le LineEdit resultat
         resultat = str(self.le_resultat.text())
 
         # On additionne l'operation en cours avec le texte dans le resultat
         # et on ajoute à la fin le signe de l'operation qu'on a choisie
-        self.le_operation.setText(operationText + resultat + operation)
+        #self.le_operation.setText(operationText + resultat + operation)
+        self.le_operation.setText(resultat + operation)
         # On reset le texte du LineEdit resultat
         self.le_resultat.setText('0')
 
@@ -75,7 +88,7 @@ class Calculatrice(Ui_form_calculatrice, QtWidgets.QWidget):
         self.le_operation.setText("")
 
     def calculOperation(self):
-        """On calcule le resultat de l'operation en cours (quand l'utilisateur appuie sur egal)"""
+        """On calcule le resultat de l'operation en cours (quand l'utilisateur appuie sur egual)"""
 
         # On recupere le texte dans le LineEdit resultat
         resultat = str(self.le_resultat.text())
@@ -85,10 +98,11 @@ class Calculatrice(Ui_form_calculatrice, QtWidgets.QWidget):
         self.le_operation.setText(self.le_operation.text() + resultat)
 
         # On evalue le resultat de l'operation
-        resultatOperation = eval(str(self.le_operation.text()))
+        resultatOperation = int(eval(str(self.le_operation.text())))
 
         # On met le resultat final dans le LineEdit resultat
         self.le_resultat.setText(str(resultatOperation))
+
 
 
 app = QtWidgets.QApplication([])

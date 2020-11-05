@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="711e9f12-4985-4449-8e41-e79ace5c3ca0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/LesShortcuts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/LesShortcuts.py" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/LesShortcuts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/calculatrice.py" beforeDir="false" afterPath="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/calculatrice.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +33,10 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PySide2/PyExplorer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.python" />
   </component>
-  <component name="RunManager" selected="Python.LesShortcuts">
+  <component name="RunManager" selected="Python.calculatrice">
     <configuration name="LesShortcuts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LesInterfacesGraphiquesAvecPyside" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,15 +80,12 @@
       <module name="LesInterfacesGraphiquesAvecPyside" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LesInterfacesGraphiquesAvecPyside/TP1-CreationCalculatrice/calculatrice.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/AppData/Local/Temp/TP01E-Ajouter+les+raccourcis+claviers/calculatrice.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,6 +140,9 @@
       <module name="LesInterfacesGraphiquesAvecPyside" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Program Files\Python39\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.." />
       <option name="IS_MODULE_SDK" value="true" />
@@ -165,11 +166,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LesShortcuts" />
-        <item itemvalue="Python.monInterface" />
-        <item itemvalue="Python.monApplication" />
-        <item itemvalue="Python.monApplication" />
-        <item itemvalue="Python.monApplication" />
+        <item itemvalue="Python.calculatrice" />
+        <item itemvalue="Python.calculatrice" />
+        <item itemvalue="Python.calculatrice" />
+        <item itemvalue="Python.calculatrice" />
+        <item itemvalue="Python.calculatrice" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604408062776</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tp Les Raccourcis claviers">
+      <created>1604517559433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604517559433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -222,21 +230,22 @@
     <MESSAGE value="Added layout chapter" />
     <MESSAGE value="Added other widgets" />
     <MESSAGE value="Tp calculatrice" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tp calculatrice" />
+    <MESSAGE value="Tp Les Raccourcis claviers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tp Les Raccourcis claviers" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="235" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604135669214">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="414" y="235" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604135669214" />
-    <state x="589" y="165" key="CommitChangelistDialog2" timestamp="1604408061702">
+    <state x="589" y="165" key="CommitChangelistDialog2" timestamp="1604517558411">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="589" y="165" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604408061702" />
-    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1604517196467">
+    <state x="589" y="165" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604517558411" />
+    <state x="740" y="335" key="FileChooserDialogImpl" timestamp="1604594516907">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604517196467" />
+    <state x="740" y="335" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604594516907" />
     <state width="1899" height="321" key="GridCell.Tab.0.bottom" timestamp="1603555462882">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -257,9 +266,13 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="461" y="225" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604216502754" />
-    <state x="554" y="330" key="Vcs.Push.Dialog.v2" timestamp="1604408066428">
+    <state x="554" y="330" key="Vcs.Push.Dialog.v2" timestamp="1604517564007">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="554" y="330" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604408066428" />
+    <state x="554" y="330" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604517564007" />
+    <state x="684" y="509" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1604593677935">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="684" y="509" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1160/1920.0.1920.1160@0.0.1920.1160" timestamp="1604593677935" />
   </component>
 </project>
