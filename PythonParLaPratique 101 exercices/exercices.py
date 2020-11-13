@@ -6,6 +6,8 @@ import random
 import constants
 import os
 import random
+from pathlib import Path
+from glob import glob
 
 ###################
 # Niveau Debutant #
@@ -207,9 +209,6 @@ print("\nExercice 6")
 # list = range(3)
 # list2 = range(5)
 # print(list(list2))
-list1 = range(3)
-list2 = range(5)
-print(list(list2))
 
 """
     SOLUTION
@@ -1971,6 +1970,7 @@ Pour finir, on utilise la fonction sum, pour faire la somme de tous les nombres 
     Pour additionner ensemble tous les nombres contenus dans une liste, on utilise la fonction sum.
 """
 
+
 print("\n Exercice48")
 # # Exercice 48
 # # Notion abordees: comprehension liste.
@@ -2016,6 +2016,7 @@ Ainsi, directement en bouclant sur la liste, on remplace toutes les occurrences 
 
     Pour remplacer un mot par un autre, on utilise la fonction replace.
 """
+
 
 print("\n Exercice49")
 # # Exercice 49
@@ -2066,6 +2067,7 @@ De cette façon, si on tombe une seconde fois sur le même nombre, la structure 
     Pour vérifier si un élément est déjà présent ou non dans une liste, on utilise la syntaxe i in liste. Si le nombre est déjà dans la liste, cette syntaxe retournera True, si non, False.
 """
 
+
 print("\n Exercice50")
 # # Exercice 50
 # # Printer un phrase autant de fois qu'un utilisateur le demande
@@ -2089,25 +2091,26 @@ print("\n Exercice50")
     	i += 1
 """
 
+
 print("\n Exercice51")
-# Notions abordees: les dictionnaires, boucle for.
-# On s'attaque maintenant aux dictionnaires, toujours avec un peu de boucle for pour pimenter le tout.
-# Dans cet exercice, vous devez boucler à travers la liste et ajouter au dictionnaire 'employes' seulement
-# les elements de la liste qui sont des chaines de caractere.
-# Le but de l'exercice est de trier les donnees et de construire un dictionnaire d'employes.
-# Les cles du dictionnaires doivent etre 'id-xx', xx etant le numere de l'employe.
-# Votre script devra donc retourner le dictionnaire suivant:
-# {'id-01','Pierre','id-02','Marie','id-03','Adrien'}
-#
-employes = {}
-liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
-num = 1
-for element in liste:
-    if (isinstance(element, str)):
-        id = "id" + "-" + "0" + str(num)
-        employes[id] = element
-        num += 1
-print(employes)
+# # Notions abordees: les dictionnaires, boucle for.
+# # On s'attaque maintenant aux dictionnaires, toujours avec un peu de boucle for pour pimenter le tout.
+# # Dans cet exercice, vous devez boucler à travers la liste et ajouter au dictionnaire 'employes' seulement
+# # les elements de la liste qui sont des chaines de caractere.
+# # Le but de l'exercice est de trier les donnees et de construire un dictionnaire d'employes.
+# # Les cles du dictionnaires doivent etre 'id-xx', xx etant le numere de l'employe.
+# # Votre script devra donc retourner le dictionnaire suivant:
+# # {'id-01','Pierre','id-02','Marie','id-03','Adrien'}
+# #
+# employes = {}
+# liste = [10, 2329, 5, "Pierre", 203, "Marie", 867, "Adrien"]
+# num = 1
+# for element in liste:
+#     if (isinstance(element, str)):
+#         id = "id" + "-" + "0" + str(num)
+#         employes[id] = element
+#         num += 1
+# print(employes)
 
 """
         SOLUTION
@@ -2148,21 +2151,21 @@ La syntaxe :02d permet d'indiquer que nous souhaitons formater le nombre i pour 
     Pour formater un nombre pour qu'il contienne toujours 2 chiffres, on utilise la syntaxe 02d à l'intérieur d'accolades utilisées pour la fonction format.
 """
 
-print("\n Exercice52")
-# Notions abordees: les dictionnaires.
-# On continue les dictionnaires: dans cet exercice, vous devez creer un dictionnaire qui contient toutes les lettres de l'alphabet.
-# La cle de chaque element du dictionnaire doit contenir la position de la lettre dans l'alphabet, et la valeur doit etre egal à la
-# lettre en question. L'indice de la premiere letrre doit etre 1 et non 0 !
-# votre dicitionnaire doit donc etre comme ci-dessous:
-# {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h'} etc...
-# Aller plus loin: Essayer de faire tenir votre script en une seule ligne !
-alphabet = {}
-i = 1
-for letter in string.ascii_lowercase:
-    alphabet[i] = letter
-    i += 1
-
-print(alphabet)
+# print("\n Exercice52")
+# # Notions abordees: les dictionnaires.
+# # On continue les dictionnaires: dans cet exercice, vous devez creer un dictionnaire qui contient toutes les lettres de l'alphabet.
+# # La cle de chaque element du dictionnaire doit contenir la position de la lettre dans l'alphabet, et la valeur doit etre egal à la
+# # lettre en question. L'indice de la premiere letrre doit etre 1 et non 0 !
+# # votre dicitionnaire doit donc etre comme ci-dessous:
+# # {1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e', 6: 'f', 7: 'g', 8: 'h'} etc...
+# # Aller plus loin: Essayer de faire tenir votre script en une seule ligne !
+# alphabet = {}
+# i = 1
+# for letter in string.ascii_lowercase:
+#     alphabet[i] = letter
+#     i += 1
+#
+# print(alphabet)
 
 """     
     POINTS IMPORTANTS À RETENIR
@@ -2222,24 +2225,25 @@ En effet, vous pouvez passer une liste contenant des tuples contenant deux élé
     Pour créer un dictionnaire à partir d'une liste de tuple, on peut utiliser la fonction dict.
 """
 
-print("\n Exercice 53")
 
-
-# Notons abordees: la boucle for, les fonctions.
-# Un exercice toujours tres interessant à faire en Python est d'essayer de recreer les fonctions de base.
-# Dans cet exercice, nous allons recreer la fonction len() qui permet de compter la longueur d'une variable.
-# Dans cet exemple, nous voulons compter le nombre de lettres dans le mot 'bonjour'/
-# votre script doit donc retourner le nombre 7.
-
-
-def longueur(variable):
-    compteur = 0
-    for i in variable:
-        compteur += 1
-    return compteur
-
-
-print(longueur("bonjour"))
+# print("\n Exercice 53")
+#
+#
+# # Notons abordees: la boucle for, les fonctions.
+# # Un exercice toujours tres interessant à faire en Python est d'essayer de recreer les fonctions de base.
+# # Dans cet exercice, nous allons recreer la fonction len() qui permet de compter la longueur d'une variable.
+# # Dans cet exemple, nous voulons compter le nombre de lettres dans le mot 'bonjour'/
+# # votre script doit donc retourner le nombre 7.
+#
+#
+# def longueur(variable):
+#     compteur = 0
+#     for i in variable:
+#         compteur += 1
+#     return compteur
+#
+#
+# print(longueur("bonjour"))
 
 """
         SOLUTION
@@ -2278,35 +2282,36 @@ Et voilà, le tour est joué ! Une fonction très importante que l'on utilise qu
     Pour incrémenter facilement un nombre entier, on peut utiliser la syntaxe +=
 """
 
-print("\n Exercice 54")
-# Notions abordees: La fonction print, la fonction range, la boucle for.
-# Dans cet exercice, vous allez devoir afficher une moitie de losange composee du symbole '*' grace à une boucle for
-# et la fonction print
-# votre scipt doit afficher le motif suivant:
-# *
-# **
-# ***
-# ****
-# *****
-# ******
-# *******
-# ********
-# *******
-# ******
-# *****
-# ****
-# ***
-# **
-# *
-n = 8
-symbole = '*'
-for i in range(0, n):
-    resultat = (symbole) * i
-    print(resultat)
 
-for i in range(n, 0, -1):
-    resultat = (symbole) * i
-    print(resultat)
+# print("\n Exercice 54")
+# # Notions abordees: La fonction print, la fonction range, la boucle for.
+# # Dans cet exercice, vous allez devoir afficher une moitie de losange composee du symbole '*' grace à une boucle for
+# # et la fonction print
+# # votre scipt doit afficher le motif suivant:
+# # *
+# # **
+# # ***
+# # ****
+# # *****
+# # ******
+# # *******
+# # ********
+# # *******
+# # ******
+# # *****
+# # ****
+# # ***
+# # **
+# # *
+# n = 8
+# symbole = '*'
+# for i in range(0, n):
+#     resultat = (symbole) * i
+#     print(resultat)
+#
+# for i in range(n, 0, -1):
+#     resultat = (symbole) * i
+#     print(resultat)
 
 """
 SOLUTION
@@ -2380,26 +2385,27 @@ POINTS IMPORTANTS À RETENIR
     Pour créer une liste avec la fonction range en sens inverse, on peut passer un troisième paramètre : -1
 """
 
-print("\n Exercice 55")
-# Notions abordees: les boucles, les chaines de caractere.
-# Dans cet exercice, nous aloons, à partir d'une variable 'symbole' et un variable 'taille'
-# creer un pyramdide avec ce symbole, de la hauteur du nombre contenu dans la variable 'taille'.
-# Dans cet exemple-ci, nous allons donc afficher une pyramide de dollar ($) de hauteur 10.
-# votre script devra donc afficher:
-#         $
-#        $ $
-#       $ $ $
-#      $ $ $ $
-#     $ $ $ $ $
-#    $ $ $ $ $ $
-#   $ $ $ $ $ $ $
-#  $ $ $ $ $ $ $ $
-# $ $ $ $ $ $ $ $ $
 
-symbole = "$"
-taille = 10
-for i in range(1, taille + 1):
-    print(" " * (((11) - i) - 1) + (symbole + " ") * i)
+# print("\n Exercice 55")
+# # Notions abordees: les boucles, les chaines de caractere.
+# # Dans cet exercice, nous aloons, à partir d'une variable 'symbole' et un variable 'taille'
+# # creer un pyramdide avec ce symbole, de la hauteur du nombre contenu dans la variable 'taille'.
+# # Dans cet exemple-ci, nous allons donc afficher une pyramide de dollar ($) de hauteur 10.
+# # votre script devra donc afficher:
+# #         $
+# #        $ $
+# #       $ $ $
+# #      $ $ $ $
+# #     $ $ $ $ $
+# #    $ $ $ $ $ $
+# #   $ $ $ $ $ $ $
+# #  $ $ $ $ $ $ $ $
+# # $ $ $ $ $ $ $ $ $
+#
+# symbole = "$"
+# taille = 10
+# for i in range(1, taille + 1):
+#     print(" " * (((11) - i) - 1) + (symbole + " ") * i)
 
 """
     SOLUTION
@@ -2447,36 +2453,37 @@ Pour que chaque symbole soit bien aligné pour constituer une pyramide, il faut 
 
     Pour afficher plusieurs fois de suite un caractère, on peut tout simplement multiplier une chaîne de caractère par un nombre.
 """
-print("\n Exercice 56")
-# Notions abordees: la fonction format.
-# Dans cet exercice, nous continuons d'aborder le formatage de texte, cette fois-ci avec la fonction format.
-# le but de cet exercice est d'afficher le texte suivant:
-# -------------
-# |    B      |
-# |    o      |
-# |    n      |
-# |    j      |
-# |    o      |
-# |    u      |
-# |    r      |
-# |           |
-# |    J      |
-# |    u      |
-# |    l      |
-# |    i      |
-# |    e      |
-# |    n      |
-# -------------
 
-texte = "Bonjour Julien"
-longueur = len(texte)
-symbole1 = "-"
-symbole2 = "|"
-
-print(symbole1 * longueur)
-for lettre in texte:
-    print(f"{symbole2}{lettre:^{longueur - 2}}{symbole2}")
-print(symbole1 * longueur)
+# print("\n Exercice 56")
+# # Notions abordees: la fonction format.
+# # Dans cet exercice, nous continuons d'aborder le formatage de texte, cette fois-ci avec la fonction format.
+# # le but de cet exercice est d'afficher le texte suivant:
+# # -------------
+# # |    B      |
+# # |    o      |
+# # |    n      |
+# # |    j      |
+# # |    o      |
+# # |    u      |
+# # |    r      |
+# # |           |
+# # |    J      |
+# # |    u      |
+# # |    l      |
+# # |    i      |
+# # |    e      |
+# # |    n      |
+# # -------------
+#
+# texte = "Bonjour Julien"
+# longueur = len(texte)
+# symbole1 = "-"
+# symbole2 = "|"
+#
+# print(symbole1 * longueur)
+# for lettre in texte:
+#     print(f"{symbole2}{lettre:^{longueur - 2}}{symbole2}")
+# print(symbole1 * longueur)
 """
     SOLUTION
 
@@ -2541,142 +2548,295 @@ Puis on termine notre script par le même print que pour afficher la première l
     Pour faire en sorte qu'une chaîne de caractère occupe un nombre précis de caractère, vous pouvez la 'padder' avec des espaces, en utilisant l'accent circonflexe à l'intérieur de votre chaîne de caractère et la méthode format.
 """
 
-print("\n Exercice 57")
-# Notions abordees: la boucle for, les fonctions, les structures conditionnelles.
-# Dans cet exercice, nous voulons formater un nombre pour ajouter une virgule entre chaque millier.
-# Ansi, le nombre contenu dans la variable 'nombre' devra etre comme ci-dessous:
-# 52,039,480,394,023
-# Votre script doit bien entendue fonctionner peu importe le nombre
-nombre = []
-resultat = ''
-while len(nombre) < 4:
-    nombre = ['5', '2', '0', '3', '9', '4', '8', '0', '3', '9', '4', '0', '2', '3']
 
-    if (len(nombre) < 4):
-        print("Votre nombre est < 1000 !\n")
-    else:
-        i = 0
-    nombre.reverse()
+# print("\n Exercice 57")
+# # Notions abordees: la boucle for, les fonctions, les structures conditionnelles.
+# # Dans cet exercice, nous voulons formater un nombre pour ajouter une virgule entre chaque millier.
+# # Ansi, le nombre contenu dans la variable 'nombre' devra etre comme ci-dessous:
+# # 52,039,480,394,023
+# # Votre script doit bien entendue fonctionner peu importe le nombre
+# nombre = []
+# resultat = ''
+# while len(nombre) < 4:
+#     nombre = ['5', '2', '0', '3', '9', '4', '8', '0', '3', '9', '4', '0', '2', '3']
+#
+#     if (len(nombre) < 4):
+#         print("Votre nombre est < 1000 !\n")
+#     else:
+#         i = 0
+#     nombre.reverse()
+#
+#     while i < len(nombre):
+#         if (int(i) % 3 == 0) and (i != 0):
+#             resultat = resultat + ','
+#         resultat += nombre[i]
+#         i += 1
+#
+# print(resultat[::-1])
+#
+#
+# # correction
+# def ajout_separateur(nombre):
+#     nombre = str(nombre)[::-1]
+#     resultat = ""
+#
+#     for i, chiffre in enumerate(nombre, 1):
+#         print(i, chiffre)
+#         chiffre_formatte = chiffre + "," if i % 3 == 0 and i != len(nombre) else chiffre
+#         resultat += chiffre_formatte
+#
+#     return resultat[::-1]
+#
+#
+# nombre = 52039480394023
+# print(ajout_separateur(nombre))
+#
+#
+# print("\n Exercice 58")
+# # Dans cet exercice, nous allons utiliser le module datetime pour calculer l'annee de naissance de quelqu'un
+# # à partir de son age. Dans cet exemple, nous allons prendre un age de 25 ans.
+# # Afin de ne pas fausser les resultats, nous allons egalement indiquer le mois de naissance afin de verifier si
+# # la date d'anniversaire de la personne est passee ou non.
+# # Nous avons donc deux variables:
+# # 1 - La variable 'age' qui contient l'age de la personne (ici: 25).
+# # 2 - Le mois de naissance, contenu dans la variable 'mois_de_naissance' (ici, le mois d'octobre, soit 10).
+# # A partir de ces deux infos, il faut calculer l'annee à laquelle est nee la personne.
+# # Dansce cas-ci. l'annee que vous devez afficher est '1994'
+# from datetime import date
+#
+# age = 25
+# mois_de_naissance = 10
+#
+#
+# def date_of_birth(age, month):
+#     current_year = date.today().year
+#     current_month = date.today().month
+#     birth_year = current_year - age
+#     if month > current_month:
+#         birth_year += 1
+#     return birth_year
+#
+#
+# print(date_of_birth(25, 10))
+#
+#
+# print("Exercice 59")
+#
+#
+# # Notions abordees: la fonction sum, la fonction range.
+# # Dans cet exercice, nous allons calculer la somme des nombres entre deux nombres.
+# # Dans cet exemple-ci, nous prenons les nombres 2 et 6, le resultat de votre script doit donc etre 20 (2 +3 + 4 + 5 + 6)
+# # Attention: votre script doit fonctiooner peu importe l'ordre dans lequel vous donnez les nombres : somme(2, 6) et
+# # somme(6, 2) doivent retourner le meme resultat !
+# # Astuces: Afin de faire fonctionner le script peu importe l'ordre des variables a et b, pensez à utiliser les fonctions
+# # min et max.
+#
+# def somme(a, b):
+#     total = 0
+#     for i in range(min(a, b), max(a, b) + 1):
+#         total += i
+#     return (total)
+#
+#
+# print(somme(2, 6))
+#
+#
+# # correction
+# def somme(a, b):
+#     return sum(range(min(a, b), max(a, b) + 1))
+#
+#
+# print(somme(2, 6))
+#
+#
+# print("Exercice 60")
+# from math import floor
+# import string
+#
+# # Separer la liste ci-dessous en 2 par rapport au milieu de l'alphabet.
+# employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
+#
+# alphabet = string.ascii_lowercase
+# milieu = int(len(alphabet) / 2)
+# print(milieu)
+#
+# alphabet_01, alphabet_02 = alphabet[:milieu], alphabet[milieu:]
+# employes_a_m = []
+# employes_n_z = []
+# for employe in employes:
+#     premiere_lettre = employe[0].lower()
+#     if premiere_lettre in alphabet_01:
+#         employes_a_m.append(employe)
+#     elif premiere_lettre in alphabet_02:
+#         employes_n_z.append(employe)
+#
+# print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
+# print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
+#
+# # Optimal solution
+# employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
+# alphabet = string.ascii_lowercase
+# employes_a_m = [e for e in employes if e[0].lower() in alphabet[:13]]
+# employes_n_z = [e for e in employes if e[0].lower() in alphabet[13:]]
+#
+# print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
+# print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
+#
+#
+# print("Exercice 61")
+# # Notions abordees: le module os, la boucle while, les fonctions.
+# # Dans cet exercice, nous abordons le module os !
+# # Le but de cet exercice est de creer une fonction, qui permette de remonter dans une structure de dossier autant de
+# # fois qu'indique.
+# # Par exemple avec le dossier suivant: /Users/Thibh/Desktop/Dossier_01/Tutoriel/Udemy
+# # Nous allons indiquer à la fonction 'remonter_dossier' le nombre de dossier que l'on veut remonter, par exemple:
+# # remonter_dossier("/Users/Thibh/Desktop/Dossier_01/Udemy, 3)
+# # Notre fonction va donc remonter dans la structure de dossier 3 fois et nous retourner le chemin suivant:
+# # /Users/Thibh/Desktop
+# # Astuces: Pour recuperer le dossier parent d'un dossier, on utilise la fonction os.path.dirname() du module OS.
+# dossier = "/Users/Thibn/Desktop/Dossier_01/Tutoriel/Udemy"
+#
+#
+# def remonter_dossier(path, level):
+#     result = ''
+#     i = 0
+#     print(path, level)
+#     while i < level:
+#         path = os.path.dirname(path)
+#         i += 1
+#     print(path)
+#
+#
+# remonter_dossier(dossier, 3)
+#
+#
+# print("Exercice 62")
+# # ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11318094#overview
+# chemin = "/Users/Thibn/Desktop/Dossier_01/../../Dossier02/Udemy"
+#
+#
+# # la fonction os.path.normpath(chemin) permet de transformer le chemin relatif en chemin absolu.
+# # Faire de meme sans utiliser cette fonction
+# def normalize_path(chemin):
+#     result = []
+#     nouveau_chemin = chemin.split("/")
+#     for element in nouveau_chemin:
+#         if element == '..':
+#             del result[-1]
+#         else:
+#             result.append(element)
+#     return os.sep.join(result)
+#
+#
+# print(normalize_path(chemin))
+#
+#
+# # Autre solution possible
+# def normalize_path(chemin):
+#     chemin_parts = chemin.split("/")
+#     while ".." in chemin_parts:
+#         index = chemin_parts.index("..")
+#         chemin_parts.pop(index)
+#         chemin_parts.pop(index - 1)
+#
+#     return os.sep.join(chemin_parts)
+# print(normalize_path(chemin))
+#
+#
+# print("Exercice 63")
+# # ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11318608#overview
+# dossier = os.path.dirname(__file__)
+# dossier = os.path.join(dossier, 'data')
+# fichier = os.path.join(dossier, 'Fichier.txt')
+#
+# try:
+#     os.makedirs(dossier, exist_ok=True)
+#     print("Directory '%s' created successfully" %dossier)
+# except OSError as error:
+#     print("Directory '%s' can not be created")
+#
+# with open(fichier, 'w') as f:
+#     f.write("Ceci est mon texte !")
+#
+#
+# print("Exercice 64")
+# # ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11318478#overview
+# import os
+# import distutils
+#
+# cur_dir = os.path.realpath(os.path.dirname(__file__))
+# fichier = os.path.join(cur_dir, "variable.txt")
+#
+# with open(fichier, "r") as f:
+#     variable = f.read()
+#
+# vraie_variable = bool(distutils.util.strobool(variable))
+# if vraie_variable:
+#     print("La variable est un boolean True")
 
-    while i < len(nombre):
-        if (int(i) % 3 == 0) and (i != 0):
-            resultat = resultat + ','
-        resultat += nombre[i]
-        i += 1
 
-print(resultat[::-1])
-
-
-# correction
-def ajout_separateur(nombre):
-    nombre = str(nombre)[::-1]
-    resultat = ""
-
-    for i, chiffre in enumerate(nombre, 1):
-        print(i, chiffre)
-        chiffre_formatte = chiffre + "," if i % 3 == 0 and i != len(nombre) else chiffre
-        resultat += chiffre_formatte
-
-    return resultat[::-1]
-
-
-nombre = 52039480394023
-print(ajout_separateur(nombre))
-
-print("\n Exercice 58")
-# Dans cet exercice, nous allons utiliser le module datetime pour calculer l'annee de naissance de quelqu'un
-# à partir de son age. Dans cet exemple, nous allons prendre un age de 25 ans.
-# Afin de ne pas fausser les resultats, nous allons egalement indiquer le mois de naissance afin de verifier si
-# la date d'anniversaire de la personne est passee ou non.
-# Nous avons donc deux variables:
-# 1 - La variable 'age' qui contient l'age de la personne (ici: 25).
-# 2 - Le mois de naissance, contenu dans la variable 'mois_de_naissance' (ici, le mois d'octobre, soit 10).
-# A partir de ces deux infos, il faut calculer l'annee à laquelle est nee la personne.
-# Dansce cas-ci. l'annee que vous devez afficher est '1994'
-from datetime import date
-
-age = 25
-mois_de_naissance = 10
+print("\n Exercice65")
+# """
+# Notions abordees: Les boucles, les operateurs mathematiques.
+# Dans cet exercice, nous cherchons tous les diviseurs d'un nombre, dans ce cas-ci, le nombre 50.
+# Les diviseurs du nombre 50 correspondant à tous les nombres par lesquels on peut diviser 50 sans qu'il n'y ait de reste
+# à la division.
+# Par exemple, 25 est un diviseur de 50 (car 50 / 25 = 2, et il reste 0.)
+# Astuces: Pour trouver le rest d'une division avec Python, on utilise l'operateur modulo(%)
+# """
+#
+# nombre = 1
+# diviseur = []
+# while 51 - nombre > 0:
+#     if 50 % nombre == 0:
+#         diviseur.append(nombre)
+#     nombre += 1
+#
+# print(diviseur)
 
 
-def date_of_birth(age, month):
-    current_year = date.today().year
-    current_month = date.today().month
-    birth_year = current_year - age
-    if month > current_month:
-        birth_year += 1
-    return birth_year
+print("\n Exercie66")
+# """
+# Notions abordees: Les boucles, les operateurs mathemeatiques, les structures conditionnelles
+# Le but de cet exercice est de trouver tous les nombres de 0 à 1000 qui sont divisibles par 7 mais ne sont pas des multiples
+# de 3. Par exemple, le nombre 14 est divisible par 7 (car 14/7=2, il reste 0), mais n'est pas un multiple de 3 (car 14/3
+# ne retourne pas un nombre entier).
+# Pour valider l'exercice, vous devez récupérer tous ces nombres dans la liste nombres.
+# """
+# nombres = []
+# for i in range(1, 1001):
+#     if (i % 7 == 0) and i % 3 != 0:
+#         nombres.append(i)
+# print(nombres)
 
 
-print(date_of_birth(25, 10))
+print("\n Exercice67")
+# """
+# Notions abordées: les boucles.
+# Dans cette exercice, nous cherchons la factorielle d'un nombre, dans ce cas-ci le nombre 5.
+# La factorielle de 5 est egale à 120 (car 1 x 2 x 3 x 4 x 5 = 120)
+# Votre script doit aussi gérer le cas dans lequel le nombre de départ est 0 (la factorielle de 0 est égale à 1).
+# Astuces: Pour calculer la factorielle d'un nombre, vous pouvez utiliser une boucle for associée à la fonction range.
+# """
+#
+# nombre_saisie = int(input("entrer un nombre:"))
+# print(f"Le nombre saisie est {nombre_saisie}")
+# result = 1
+# for i in range(1, nombre_saisie+1):
+#     result *= i
+#
+# print(result)
 
-print("Exercice 59")
+print("\n Exercice68")
+"""
+ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11331692#overview
+"""
+dossier = r"C:\Users\MOTTIER LUCIE\Documents\testglob"
+fichier_a_trouver = "fichier_a_trouver.txt"
 
+# fichiers = glob(dossier + "/**", recursive=True)
+# fichiers_trouves = [f for f in fichiers if os.path.split(f)[1] == fichier_a_trouver]
+# print(fichier_a_trouver)
 
-# Notions abordees: la fonction sum, la fonction range.
-# Dans cet exercice, nous allons calculer la somme des nombres entre deux nombres.
-# Dans cet exemple-ci, nous prenons les nombres 2 et 6, le resultat de votre script doit donc etre 20 (2 +3 + 4 + 5 + 6)
-# Attention: votre script doit fonctiooner peu importe l'ordre dans lequel vous donnez les nombres : somme(2, 6) et
-# somme(6, 2) doivent retourner le meme resultat !
-# Astuces: Afin de faire fonctionner le script peu importe l'ordre des variables a et b, pensez à utiliser les fonctions
-# min et max.
-
-def somme(a, b):
-    total = 0
-    for i in range(min(a, b), max(a, b)+1):
-        total += i
-    return (total)
-
-
-print(somme(2, 6))
-
-# correction
-def somme(a, b):
-    return sum(range(min(a, b), max(a, b) + 1))
-
-print(somme(2, 6))
-
-
-print("Exercice 60")
-from math import floor
-import string
-# Separer la liste ci-dessous en 2 par rapport au milieu de l'alphabet.
-employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
-
-alphabet = string.ascii_lowercase
-milieu = int(len(alphabet)/2)
-print(milieu)
-
-alphabet_01, alphabet_02 = alphabet[:milieu], alphabet[milieu:]
-employes_a_m = []
-employes_n_z = []
-for employe in employes:
-    premiere_lettre = employe[0].lower()
-    if premiere_lettre in alphabet_01:
-        employes_a_m.append(employe)
-    elif premiere_lettre in alphabet_02:
-        employes_n_z.append(employe)
-
-print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
-print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
-
-# Optimal solution
-employes = ["Pierre", "Marie", "Julien", "Astrid", "Zoe"]
-alphabet = string.ascii_lowercase
-employes_a_m = [e for e in employes if e[0].lower() in alphabet[:13]]
-employes_n_z = [e for e in employes if e[0].lower() in alphabet[13:]]
-
-print("Employes de A à M:", ", ".join(sorted(employes_a_m)))
-print("Employes de N à Z:", ", ".join(sorted(employes_n_z)))
-
-print("Exercice 61")
-# Notions abordees: le module os, la boucle while, les fonctions.
-# Dans cet exercice, nous abordons le module os !
-# Le but de cet exercice est de creer une fonction, qui permette de romonter dans une structure de dossier autant de
-# fois qu'indique.
-# Par exemple avec le dossier suivant: /Users/Thibh/Desktop/Dossier_01/Tutoriel/Udemy
-# Nous allons indiquer à la fonction 'remonter_dossier' le nombre de dossier que l'on veut remonter, par exemple:
-# remonter_dossier("/Users/Thibh/Desktop/Dossier_01/Udemy, 3)
-# Notre fonction va donc remonter dans la structure de dossier 3 fois et nous retourner le chemin suivant:
-# /Users/Thibh/Desktop
-# Astuces: Pour recuperer le dossier parent d'un dossier, on utilise la fonction os.path.dirname() du module OS.
+for fichier in glob(dossier + './**/', recursive=True):
+    print(fichier)
