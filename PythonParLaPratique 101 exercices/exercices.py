@@ -2,10 +2,10 @@ import string
 import enum
 from math import pi
 import time
+from datetime import date
 import random
 import constants
 import os
-import random
 from pathlib import Path
 from glob import glob
 
@@ -1970,7 +1970,6 @@ Pour finir, on utilise la fonction sum, pour faire la somme de tous les nombres 
     Pour additionner ensemble tous les nombres contenus dans une liste, on utilise la fonction sum.
 """
 
-
 print("\n Exercice48")
 # # Exercice 48
 # # Notion abordees: comprehension liste.
@@ -2016,7 +2015,6 @@ Ainsi, directement en bouclant sur la liste, on remplace toutes les occurrences 
 
     Pour remplacer un mot par un autre, on utilise la fonction replace.
 """
-
 
 print("\n Exercice49")
 # # Exercice 49
@@ -2067,7 +2065,6 @@ De cette façon, si on tombe une seconde fois sur le même nombre, la structure 
     Pour vérifier si un élément est déjà présent ou non dans une liste, on utilise la syntaxe i in liste. Si le nombre est déjà dans la liste, cette syntaxe retournera True, si non, False.
 """
 
-
 print("\n Exercice50")
 # # Exercice 50
 # # Printer un phrase autant de fois qu'un utilisateur le demande
@@ -2090,7 +2087,6 @@ print("\n Exercice50")
     	continuer = input("Voulez-vous continuer ? o/n ")
     	i += 1
 """
-
 
 print("\n Exercice51")
 # # Notions abordees: les dictionnaires, boucle for.
@@ -2225,7 +2221,6 @@ En effet, vous pouvez passer une liste contenant des tuples contenant deux élé
     Pour créer un dictionnaire à partir d'une liste de tuple, on peut utiliser la fonction dict.
 """
 
-
 # print("\n Exercice 53")
 #
 #
@@ -2281,7 +2276,6 @@ Et voilà, le tour est joué ! Une fonction très importante que l'on utilise qu
     Pour boucler à travers les différents éléments de plusieurs types de variables, on peut utiliser une boucle for.
     Pour incrémenter facilement un nombre entier, on peut utiliser la syntaxe +=
 """
-
 
 # print("\n Exercice 54")
 # # Notions abordees: La fonction print, la fonction range, la boucle for.
@@ -2384,7 +2378,6 @@ POINTS IMPORTANTS À RETENIR
 
     Pour créer une liste avec la fonction range en sens inverse, on peut passer un troisième paramètre : -1
 """
-
 
 # print("\n Exercice 55")
 # # Notions abordees: les boucles, les chaines de caractere.
@@ -2547,7 +2540,6 @@ Puis on termine notre script par le même print que pour afficher la première l
     Vous pouvez afficher plusieurs fois le même élément dans une chaîne de caractère avec la méthode format, en utilisant plusieurs fois le même indice à l'intérieur des accolades.
     Pour faire en sorte qu'une chaîne de caractère occupe un nombre précis de caractère, vous pouvez la 'padder' avec des espaces, en utilisant l'accent circonflexe à l'intérieur de votre chaîne de caractère et la méthode format.
 """
-
 
 # print("\n Exercice 57")
 # # Notions abordees: la boucle for, les fonctions, les structures conditionnelles.
@@ -2828,15 +2820,98 @@ print("\n Exercice67")
 # print(result)
 
 print("\n Exercice68")
-"""
-ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11331692#overview
-"""
-dossier = r"C:\Users\MOTTIER LUCIE\Documents\testglob"
-fichier_a_trouver = "fichier_a_trouver.txt"
+# """
+# ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11331692#overview
+# """
+# dossier = r"C:\Users\MOTTIER LUCIE\Documents\testglob"
+# fichier_a_trouver = "fichier_a_trouver.txt"
+#
+# # fichiers = glob(dossier + "/**", recursive=True)
+# # fichiers_trouves = [f for f in fichiers if os.path.split(f)[1] == fichier_a_trouver]
+# # print(fichier_a_trouver)
+#
+# for fichier in glob(dossier + './**/', recursive=True):
+#     print(fichier)
 
-# fichiers = glob(dossier + "/**", recursive=True)
-# fichiers_trouves = [f for f in fichiers if os.path.split(f)[1] == fichier_a_trouver]
-# print(fichier_a_trouver)
 
-for fichier in glob(dossier + './**/', recursive=True):
-    print(fichier)
+print("\n Exercice69")
+# """
+# ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11365358#overview
+# """
+# nbsec = int(input("Entrez un temps de rafraichissement:"))
+# dossier_a_chercher = "Python"
+# dossier = os.path.join(r"C:\Users\MOTTIER LUCIE\Documents", dossier_a_chercher)
+#
+#
+# while True:
+#     if os.path.exists(dossier):
+#         print("fichier Trouve!")
+#         exit(0)
+#     else:
+#         print("Dossier introuvable...")
+#     time.sleep(nbsec)
+#
+# # Autre possibilite:
+# dossier = r"C:\Users\MOTTIER LUCIE\Documents"
+# dossier_a_chercher = "Python"
+#
+# nbsec = input("Entrez un temps de rafraichissement:")
+# while dossier_a_chercher not in os.listdir(dossier):
+#     print("Dossier introuvable...")
+#     time.sleep(int(nbsec))
+# print("Trouve")
+
+
+print("\n Exercice70")
+# """
+# ennonce: https://www.udemy.com/course/python-exercices/learn/lecture/11365358#overview
+# """
+# dossier = r"C:\Users\MOTTIER LUCIE\Documents"
+# fichiers = glob(f"{dossier}/**", recursive=True)
+#
+# print(f"Il y a {len(fichiers)} fichiers et repertoires dans le repertoire {dossier}")
+
+print("\n Exercice71")
+# """
+# + Notions abordées: Les modules, les boucles.
+# Dans cet exercice, nous allons générer un octet aléatoire.
+# Un octet est représenté par un suite de 8 chiffires allant de 0 à 1, par exemple: 01101110 qui est égal au nombre 110
+# en base décimale.
+# + Aller plus loin: Utilisez une comprehension de liste pour réduire le nombre de lignes dans votre code.
+# + Astuce: Pour générer des nombres aléatoires en Python, on utilise le module random.
+# """
+# i = 0
+# resultat = ""
+# for i in range(0, 8):
+#     resultat = resultat + str(random.choice(range(0, 2)))
+# print(resultat)
+#
+# resultat=""
+# resultat = [str(random.choice(range(2))) for _ in range(8)]
+# print("".join(resultat))
+
+print("\n Exercice72")
+"""
++ Notions abordées: le module datetime
+Dans cette exercice, nous allons calculer le nombre de jours entre deux dates.
+La date de départ que nous allons utiliser est le 2 juillet 2014 et la date de fin le 11 juillet 2018.
+Le nombre de jours entre ces deux dates est 1470.
+A vous de trouver le code qui permet de calculer automatiquement le nombre de jours entre ces deux dates, grace au 
+module datetime.
++ Astuces: Pour créer un objet date, on utilise la classe 'date' du module 'datetime'. 
+"""
+date1 = date(2014, 7, 2)
+date2 = date(2018, 7, 11)
+print((date2 - date1).days)
+
+print("\n Exercice73")
+"""
++ Notions abordées: le module string, le module random.
+Dans cet exercice, nous allons créer un générateur de mot de passe aléatoire.
+A l'aide du module string et du module random, vous allez générer un mot de passe aléatoire de la longueur spécifiée
+dans la variable 'taille (ici, 8).
+
+Votre mot de passe doit pouvoir contenir des lettres minuscules, n'importe quel chiffre de 0 à 9 et n'importe
+quel caractère spécial(!#$%& etc...)
++ Astuces: Le module string vous permet de récupérer des suites de lettres, de nombres dou de carctères spéciaux.
+"""
