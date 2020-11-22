@@ -1,17 +1,7 @@
-import string
-import enum
-from math import pi
-import time
-from datetime import date
-import random
-import constants
-import os
-from pathlib import Path
-from glob import glob
-
 ###################
 # Niveau Debutant #
 ###################
+from pprint import pprint
 
 print("Exercice 1")
 # Exercice 1
@@ -1638,16 +1628,25 @@ Ici dans le script, nous passions directement la variable mot - qui est une cha�
 """
 
 print("\n Exercice41")
-# # Exercice 41
-# # Dans cet exercice, la fonction 'multiplicateur_mot' retourne une erreur.
-# # Trouvez cette erreur et modifiez la fonction pour qu'elle ne retourne plus d'erreur. Il y a plusieurs facons de fixer cetter erreur.
-# # Votre script doit afficher 5 fois le mot 'Bonjour' à la suite (parce que dans la vie, il est important de faire des scripts bien eleves...)
-# #
 
+# # Exercice 41 Dans cet exercice, la fonction 'multiplicateur_mot' retourne une erreur. Trouvez cette erreur et
+# # modifiez la fonction pour qu'elle ne retourne plus d'erreur. Il y a plusieurs facons de fixer cetter erreur. Votre
+# # script doit afficher 5 fois le mot 'Bonjour' à la suite (parce que dans la vie, il est important de faire des
+# # scripts bien eleves...)
+#
 # def multiplicateur_mot(mot, mult=5):
+#     """
+#
+#     Args:
+#         mot: chaine de caracteres
+#         mult: entier
+#
+#     Returns: n (mult) fois le mot (mot)
+#
+#     """
 #     return mot * mult
-
-
+#
+#
 # mot_multiplie = multiplicateur_mot(mot="Bonjour")
 # print(mot_multiplie)
 
@@ -1684,12 +1683,12 @@ print("\n Exercice42")
 # # resultat = addintion(5, 10)
 # # print(resultat)
 # #
-
+#
 # def addition(a, b):
 #     c = a + b
 #     return c
-
-
+#
+#
 # resultat = addition(5, 10)
 # print(resultat)
 
@@ -2900,9 +2899,9 @@ A vous de trouver le code qui permet de calculer automatiquement le nombre de jo
 module datetime.
 + Astuces: Pour créer un objet date, on utilise la classe 'date' du module 'datetime'. 
 """
-date1 = date(2014, 7, 2)
-date2 = date(2018, 7, 11)
-print((date2 - date1).days)
+# date1 = date(2014, 7, 2)
+# date2 = date(2018, 7, 11)
+# print((date2 - date1).days)
 
 print("\n Exercice73")
 """
@@ -2913,5 +2912,114 @@ dans la variable 'taille (ici, 8).
 
 Votre mot de passe doit pouvoir contenir des lettres minuscules, n'importe quel chiffre de 0 à 9 et n'importe
 quel caractère spécial(!#$%& etc...)
-+ Astuces: Le module string vous permet de récupérer des suites de lettres, de nombres dou de carctères spéciaux.
++ Astuces: Le module string vous permet de récupérer des suites de lettres, de nombres de carctères spéciaux.
 """
+# resultat, i, taille = "", 0, 8
+# while i < taille:
+#     resultat += random.choice(string.ascii_letters + string.digits + string.punctuation)
+#     i += 1
+#
+# print(resultat)
+#
+# # correction
+# # La premiere chose à faire est de récupérer toutes les lettres de l'alphabet, les nombres et tous les symboles:
+# symboles = string.ascii_letters + string.digits + string.punctuation
+# # On utilise ensuite le module random et la fonction choice. Cette fonction va nous permettre de sélectionner une
+# # lettre aléatoire parmi la chaine de carctère "symoble" que nous avons déclaré plus haut.
+# # Pour répéter l'opération autant de fois que nécessaire, on utilise une boucle et une compréhension de liste:
+# mot_de_passe = ''.join(random.choice(symboles) for i in range(taille))
+# print(mot_de_passe)
+
+# POINTS IMPORTANTS A RETENIR
+# 1 - Pour récupérer toutes les lettres majuscules et minuscules de l'alphabet, on utilise la constante "ascii_letters"
+# du module "string".
+# 2 - Pour récupérer tous les nombres, on utilise la constante dighits du module string.
+# 3 - Pour récupérer tous les symboles du clavier, on utilise la constante "punctuation" du module "string"
+# 4 - Pour récupérer une lettre aléatoire dans une chaine de caractère, on utilise la fonction "choice" du
+# module "random"
+
+print("\n Exercice74")
+# """
+# ennoncé: https://www.udemy.com/course/python-exercices/learn/lecture/11372370#overview
+# """
+# taille = 8
+# symboles = string.ascii_letters + string.digits + string.punctuation
+# mot_de_passe = ''.join(random.choice(symboles) for i in range(taille))
+# print(mot_de_passe)
+#
+#
+# count_numbers = 0
+# count_capital = 0
+# count_letters = 0
+# for letter in mot_de_passe:
+#     if letter in string.ascii_letters and letter.isupper():
+#         count_capital += 1
+#     elif letter in string.digits:
+#         count_numbers += 1
+#     count_letters += 1
+#
+# if count_numbers >= 2 and count_capital >= 1 and count_letters >= 8:
+#     print("le mot de passe est valide")
+# else:
+#     print("le mot de passe est invalide")
+#     print(f"DEBUG: {count_numbers}, {count_capital}, {count_letters}")
+#
+# correction (more pythonic code than above)
+# def verificateur_mdp(mdp):
+#     if len(mdp) >= 8 and any(i.isupper() for i in mdp) and len([n for n in mdp if n.isdigit()]) >= 2:
+#         return True
+#     return False
+#
+#
+# succes = verificateur_mdp(mot_de_passe)
+# print(succes)
+
+print("\n Exercice75")
+"""
++ Notions abordées: les chaines de caractères.
+Dans cet exercice, nous allons compter le nombre d'occurence du mot 'elit' dans le texte en Lorem Ipsum contenu
+dans la variable 'lorem'.
+Dans cet extrait de texte, le mot apparait une seule fois, voitre script doit donc retourner 1.
++ Astuces: Afin de compter le nombre de mots, vous devz d'abord vous débarasser des carctères spéciaux gênant comme
+les virgules et lses points.
+"""
+# lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et\
+#  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea \
+#  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\
+#   pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est\
+#    laborum."
+# mot = "elit"
+# lorem = lorem.replace(',', '').replace('.', '')
+# lorem = lorem.lower()
+# lorem_split = lorem.split()
+# print(lorem_split.count(mot))
+
+print("\n Exercice76")
+# """
+# + Notions abordées: les boucles, les chaines de caractères.
+# On Continue avec les chaines de carctère dans cet exercice dans lequel vous devez convertir une phrase en un mot au
+# format camelCase.
+# Le camelCase est un facon de formater une suite de mot pour chaque que mot soit séparé par un majuscule, excepté le
+# premier mot.
+# Dans ce cas-ci, votre script doit donc convertir la 'Phrase en camel case' en 'praseEnCamelCase'.
+# + Astuces: Afin de s'assurer qu'un mot commence par une majuscule, vous pouvez utiliser la fonction capitalize sur une
+# chaine de caractère
+# """
+# phrase = "Phrase en camel case"
+# nouvellePrase = phrase.split()
+# resultat=""
+# resultat += "".join([word.capitalize() for word in nouvellePrase])
+# resultat = resultat.replace("P", "p")
+# print(resultat)
+
+print("\n Exercice77")
+"""
++ Notions abordées: les chaines de caractère, les boucles.
+On reprend un exercice que nous avons effectué plus tot dans la formation mais cette fois ci avec une phrase.
+Il est question ici d'inverser l'ordre des mots dans la phrase. Votre phrase devra, comme une phrase normalement 
+construite, commencer par une majuscule.
+Nous avons ici la phrase 'Bonjour tout le monde', votre script devra donc retourner la phrase 'Monde le tout bonjour'.
++ Astuces: Pour inverser une liste, vous pouvez utiliser la vonction reversed.
+"""
+liste_nombre = range(25)
+pprint(list(liste_nombre))
