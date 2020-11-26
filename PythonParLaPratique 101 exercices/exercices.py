@@ -1,7 +1,6 @@
 ###################
 # Niveau Debutant #
 ###################
-from pprint import pprint
 
 print("Exercice 1")
 # Exercice 1
@@ -3021,5 +3020,132 @@ construite, commencer par une majuscule.
 Nous avons ici la phrase 'Bonjour tout le monde', votre script devra donc retourner la phrase 'Monde le tout bonjour'.
 + Astuces: Pour inverser une liste, vous pouvez utiliser la vonction reversed.
 """
-liste_nombre = range(25)
-pprint(list(liste_nombre))
+# phrase = "Bonjour tout le monde"
+# print(" ".join(list(reversed(phrase.split()))).capitalize())
+
+print("\n Exercice78")
+"""
++ Notions abordées: Les chaines de caractère.
+Dans cet exercice, nous allons vérifier si une phrase est un palindrome ou non. Un palindrome est un mot ou une phrase
+qui peut se lire de la meme facons dans les deux sens.
+Dans cet exemple-ci, nous avons le palindrome 'Un roc cornu'. Votre script devra donc vérifer si cette phrase est
+un palindrome, et donc dans ce cas-ci, retourner la valeur 'True'
++ Aller plus loin: Essayez cette fois ci de ne pas utliser la fonction reversed.
+"""
+
+# phrase = "Un roc cornu"
+# phrase = phrase.replace(" ", "")
+# phrase1 = phrase[:5]
+# phrase2 = ""
+#
+# # ma premiere solution
+# for i in range(1, 6):
+#     phrase2 += phrase[-i]
+#
+# if phrase1.lower() == phrase2.lower():
+#     print(True)
+#
+# # Autre solution possible
+# mot = "Un roc cornu"
+# mot_lower = mot.lower().replace(" ", "")
+# if mot_lower == mot_lower[::-1]:
+#     print(True)
+# else:
+#     print(False)
+#
+# chaine = "Pierre, Julien, Anne, Marie, Lucien"
+# chaine_en_ordre = chaine.split(", ")
+# chaine_en_ordre.sort()
+# chaine_en_ordre = ", ".join(chaine_en_ordre)
+# print(chaine_en_ordre)
+
+"""
++ EXPLICATIONS
+Tout d'abord, il faut séparer les différents prénoms de la chaîne de caractère pour les mettres dans une liste.
+En effet, on ne peut pas trier une chaîne de caractère, il va donc fallor passser par une liste.
+Pour séparer les différents prénoms, on utilise la fonction split, qui permet de séparer la chaîne de caractère
+en plusieurs éléments, en opérant la séparation sur la virgule.
+Vous noterez qu'on a ajouté un espace après la virgule pour ne pas récupérer l'espace dans les prénoms de notre liste
+A ce stade-ci, nous avons donc la liste suivante:
+['Pierre', 'Julien', 'Anne', 'Marie', 'Lucien']
+Il faut maintenant ordonner cette liste, ce que nous faisons à la ligne suivante avec la fonction sort.
+chaine_en_ordre.sort()
+Il ne reste plus qu'à joindre de nouveaux les prénoms de la liste avec le carctère que nous avons utilisé précédemment
+pour réaliser la séparation (une virgule suivie d'un espace).
+Pour cela, nous utilisons la méthode join.
+chaine_en_ordre = ", ".join(chaine_en_ordre)
++ POINTS IMPORTANTS A RETENIR
+- On ne peut pas trier une chaîne de caractère.
+- Pour séparer une chaîne de cactère en plusieurs éléments, on utilisera la fonction split.
+- Pour trier une liste, on utilise la fonction sort
+- Pour joindre différents éléments d'une liste par une chaîne de caractère, on utilise la méthode join.
+
+"""
+
+print("\n Exercice79")
+"""
++ Notions abordées: les chaines de caractères, les boucles.
+Encore un exercice avec un mot que vous n'avez peut-être jamais entendu de votre vie. Un pangramme est une phrase qui 
+contient toutes les lettres de l'alphabet au moins une fois.
+La phrase que nous utiliserons dans cette exercice est la suivante: "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary
+skie dans l'ombre". Vous devez donc vérifier si cette phrase est bien un pangramme, et si c'est le case, afficher la phrase
+"La phrase est un Pangramme."
+"""
+import string
+
+count = 0
+lettre_deja_utilise = []
+phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l'ombre"
+
+for letter in phrase:
+    if letter in string.ascii_letters and letter not in lettre_deja_utilise:
+        lettre_deja_utilise.append(letter)
+        count += 1
+
+if count == 26:
+    print("La phrase est un Pangramme")
+
+    # Autre solution
+    import string
+
+    phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
+    phrase_lower = phrase.lower()
+
+    alphabet = list(string.ascii_lowercase)
+
+    for l in phrase_lower:
+        if l in alphabet:
+            alphabet.remove(l)
+
+    if alphabet:
+        print("La phrase n'est pas un Pangramme")
+    else:
+        print("La phrase est un Pangramme")
+"""
+Nous commencons par convertir la phrase en minuscule avec la méthode lower.
+Nous récupérons grâce au module string toutes les lettres de l'alphabet que nous mettons dans une liste avec la
+fonction list:
+alphabet = list(string.ascii_lowercase)
+la logique ensuite est de passer à travers chque lettre de notre phrase avec une boucle for...
+for l in phrase_lower:
+... pour vérifier si la lettre courrante est contenue dans notre liste "alphabet"...
+if in alphabet:
+
+...et si c'est le cas, nous enlevons cette lettre de notre liste "alphabet":
+alphabet.remove(l)
+Il ne nous reste plus à la fin qu'à vérifier si notre liste alphabet est vide ou non. Si la liste est vide, c'est donc
+que notre phrase contenait toutes les lettres de l'alphabet. Si il reste au moins une lettre dans la liste, alors la 
+phrase n'est pas vide donc n'est pas un pangramme.
+
+Pour vérifier si une liste est vide, pas besoin de s'embêter avec la fonction len: une liste vide est évaluée comme
+False, on peut donc vérifier facilement avec une structure conditionelle si la liste est vide ou non:
+if alphabet:
+  print("La phrase n'est pas un Pangramme")
+else:
+  print("La phrase est un Pangramme")
+  
++ Points importants à retenir
+1 - pour récupérer toutes les lettres de l'alphabet, on utilise le module string et la constante "asci_lowercase".
+2 - pour enlever un élément d'une liste, on utilise la methode remove.
+3 - Une liste vide est évalée comme False.
+"""
