@@ -3091,36 +3091,36 @@ La phrase que nous utiliserons dans cette exercice est la suivante: "Joyeux, ivr
 skie dans l'ombre". Vous devez donc vérifier si cette phrase est bien un pangramme, et si c'est le case, afficher la phrase
 "La phrase est un Pangramme."
 """
-import string
-
-count = 0
-lettre_deja_utilise = []
-phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l'ombre"
-
-for letter in phrase:
-    if letter in string.ascii_letters and letter not in lettre_deja_utilise:
-        lettre_deja_utilise.append(letter)
-        count += 1
-
-if count == 26:
-    print("La phrase est un Pangramme")
-
-    # Autre solution
-    import string
-
-    phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
-    phrase_lower = phrase.lower()
-
-    alphabet = list(string.ascii_lowercase)
-
-    for l in phrase_lower:
-        if l in alphabet:
-            alphabet.remove(l)
-
-    if alphabet:
-        print("La phrase n'est pas un Pangramme")
-    else:
-        print("La phrase est un Pangramme")
+# import string
+#
+# count = 0
+# lettre_deja_utilise = []
+# phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l'ombre"
+#
+# for letter in phrase:
+#     if letter in string.ascii_letters and letter not in lettre_deja_utilise:
+#         lettre_deja_utilise.append(letter)
+#         count += 1
+#
+# if count == 26:
+#     print("La phrase est un Pangramme")
+#
+#     # Autre solution
+#     import string
+#
+#     phrase = "Joyeux, ivre, fatigué, le nez qui pique, Clown Hary skie dans l’ombre"
+#     phrase_lower = phrase.lower()
+#
+#     alphabet = list(string.ascii_lowercase)
+#
+#     for l in phrase_lower:
+#         if l in alphabet:
+#             alphabet.remove(l)
+#
+#     if alphabet:
+#         print("La phrase n'est pas un Pangramme")
+#     else:
+#         print("La phrase est un Pangramme")
 """
 Nous commencons par convertir la phrase en minuscule avec la méthode lower.
 Nous récupérons grâce au module string toutes les lettres de l'alphabet que nous mettons dans une liste avec la
@@ -3148,4 +3148,137 @@ else:
 1 - pour récupérer toutes les lettres de l'alphabet, on utilise le module string et la constante "asci_lowercase".
 2 - pour enlever un élément d'une liste, on utilise la methode remove.
 3 - Une liste vide est évalée comme False.
+"""
+
+print("\n Exercice80")
+"""
+ennoncé: https://www.udemy.com/course/python-exercices/learn/lecture/11372420#overview
+"""
+# code = "print(any(('py' or 'txt') in ext for ext in ['.py'. '.obj', '.json']))"
+# ouvrant = code.count("(")
+# fermant = code.count(")")
+# if ouvrant == fermant:
+#     print("ok")
+# elif ouvrant > fermant:
+#     print(f"il y a {ouvrant} parenthese ouvrante et {fermant} parenthese fermante")
+# else:
+#     print(f"il y a {ouvrant} parenthese ouvrante et {fermant} parenthese fermante")
+#
+# # Autre solution
+# print(code.count("(") == code.count(")"))
+
+print("\n Exercice81")
+"""
++ Notions abordées: les chaines de caractères.
+Dans cet exercice, le but est de compter le nombre de phrase présentes dans le texte contenu dans la variable
+'lorem'. Ce texte contient 4 phrases, votre script devra retourner le nombre 4.
+"""
+# lorem = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+# 		   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+# 		   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+# 		   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
+#
+# print(lorem.count("."))
+
+print("\n Exercice82")
+"""
++ Notions abordées: les boucles, les dictionnaires.
+Dans cet exercice, nous chercons à anylyser un texte pour savoir combien de fois on y retrouve chaque lettre de 
+l'alphabet.
+Nous avons donc un texte classique de Lorem Ipsum et votre script doit retourner un dictionnaire avec chaque lettre
+de l'alphabet et le nombre de fois qu'elle apparait dans le texte.
+Dans l'exemple ci-dessous, votre script devra retourner le dictionnaire suivant:
+{'a': 29, 'b': 3, 'c': 16, 'd': 19, 'e': 38, 'f':3, 'g': 3, 'h': 1, 'i': 42, 'j': 0, 'k': 0, 'l': 22, 'm': 17, 'n': 24,
+'o': 29, 'p': 11, 'q': 5, 'r': 22, 's': 18, 't': 32, 'u': 29, 'v': 3, 'w': 0, 'x': 3, 'y': 0, 'z': 0}
++ Astuces: Pour récupérer toutes les lettres de l'alphabet, vous pouvez utiliser la variable ascii_lowercase du module
+string.
+"""
+import string
+
+lorem = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+		   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
+
+resultat = {}
+
+for letter in string.ascii_lowercase:
+    resultat[letter] = 0
+
+for letter in lorem.replace('.','').replace(',','').replace(' ','').replace('\n','').replace('\t','').lower():
+    resultat[letter] += 1
+
+print(resultat)
+
+# Autre solution
+
+import string
+
+lorem = """Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."""
+
+alphabet = string.ascii_lowercase
+resultat = dict(zip(alphabet, [0] * len(alphabet)))
+
+for lettre in lorem.lower():
+    if resultat.get(lettre) is not None:
+        resultat[lettre] += 1
+
+
+print(dict(resultat))
+
+"""
++ Explication
+Dans cet exercice, le but était de compter le nombre d'occurence de chaque lettre de l'alphabet dans le texte contenu
+dans la variable "lorem" pour obtenir le cictionnairre suivant:
+{'a': 29, 'b': 3, 'c': 16, 'd': 19, 'e': 38, 'f':3, 'g': 3, 'h': 1, 'i': 42, 'j': 0, 'k': 0, 'l': 22, 'm': 17, 'n': 24,
+'o': 29, 'p': 11, 'q': 5, 'r': 22, 's': 18, 't': 32, 'u': 29, 'v': 3, 'w': 0, 'x': 3, 'y': 0, 'z': 0}
+
+Comme nous l'avons déjà fait, nous récupérons toutes les lettres de l'alphabet grâce au module string et la constante
+ascii_lowercase.
+
+Pour commencer, nous créons une liste de la meme longueur que notre variable "alphabet":
+0 * len(alphabet)
+Ce qui nous donne donc la liste suitvante:
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Nous utilisons ensuite la fonction zip et la fonction dict pour créer un dictionnaire qui contient chaque lettre de 
+l'alphabet comme clé et le nombre 0 comme valeur:
+resultat = dict(zip(alphabet, [0] * len(alphabet)))
+Ce qui nous donne le dictionnaire suivant:
+{'a': 0, 'b': 0, 'c': 0, 'd': 0, 'e': 0, 'f': 0, 'g': 0, 'h': 0, 'i': 0, 'j': 0, 'k': 0, 'l': 0, 'm': 0, 'n': 0, 'o': 0, 
+'p': 0, 'q': 0, 'r': 0, 's': 0, 't': 0, 'u': 0, 'v': 0, 'w': 0, 'x': 0, 'y': 0, 'z': 0}
+
+Nous passons ensuite avec une boucle for sur chaque lettre de notre variable "lorem""
+for lettre in lorem.lower():
+Nous faisons une petite vérification pour s'assurer que la lettre courante existe dans notre dictionnaire "resultat"
+(cela nous permet de filtrer les signes de ponctuations, les espaces etc) grâce à la méthode get.
+L'intérêt de cette méthode est que si la clé n'existe pas, la méthode retourne None, ce qui nous permet de tester
+l'existence d'une clé dans un dictionnaire dans un structure conditionnelle sans risquer de faire planter notre script.
+
+Il faut également faire attention de ne pas juste mettre if resultat.get(lettre) car la valeur de base que nous insérons
+dans le dictionnaire est 0. if 0 est équivalent à if False et la condition ne sera donc pas vérifiée. Il faut donc 
+explicitement vérifier si resultat.get(lettre) n'est pas égal à None pour que la structure conditionnelle soit vérifiée
+même si le get nous retourne 0: if resultat.get(lettre) is not None:
+Enfin, si cette lettre existe dans notre dictionnaire, nous ajoutons 1 à la valeur associée à la clé de la lettre
+contenue dans le dictionnaire:
+resultat[lettre] += 1
+Ainsi, nous allons incrémenter à chaque fois cette valeur et ainsi compter le nombre d'occurence de chaque lettre dans 
+notre variable "lorem".
+
++ Solution alternative
+Rappelez-vous qu'il est toujours possible de faire plus simple et plus concis. Pour le plaisir des yeux, voici donc une 
+façon de résoudre cet exercice en une seule igne, en utilisant la fonction count:
+dict([a, lorem.lower().count(a)) for a in string.ascii.lowercase])
+
++ Points importants à retenir
+1 - Pour créer une liste de tuple à partir de deux listes, on utilise la fonction zip
+
+2 - Pour créer un dictionnaire à partir d'une liste de tuple, on utilise la fonction dict.
+
+3 - Pour récupérer la valeur d'une clé dans un dictionnaire sans risquer de faire planter notre script si la clé 
+n'existe pas, on utilise la methode get.
+
 """
