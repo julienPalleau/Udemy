@@ -3205,7 +3205,7 @@ resultat = {}
 for letter in string.ascii_lowercase:
     resultat[letter] = 0
 
-for letter in lorem.replace('.','').replace(',','').replace(' ','').replace('\n','').replace('\t','').lower():
+for letter in lorem.replace('.', '').replace(',', '').replace(' ', '').replace('\n', '').replace('\t', '').lower():
     resultat[letter] += 1
 
 print(resultat)
@@ -3225,7 +3225,6 @@ resultat = dict(zip(alphabet, [0] * len(alphabet)))
 for lettre in lorem.lower():
     if resultat.get(lettre) is not None:
         resultat[lettre] += 1
-
 
 print(dict(resultat))
 
@@ -3280,5 +3279,200 @@ dict([a, lorem.lower().count(a)) for a in string.ascii.lowercase])
 
 3 - Pour récupérer la valeur d'une clé dans un dictionnaire sans risquer de faire planter notre script si la clé 
 n'existe pas, on utilise la methode get.
+
+"""
+
+print("\n Exercice83")
+"""
+Recréer la methode isdigit.
++ Notions abordées: Les fonctions, les boucles, les structures conditionnelles.
+Dans cet exercice, nous allons créer une méthode appartenant aux chaînes de caractères, la méthode isdigit, qui permet
+de vérifier si une chaîne de caractère ne contient que des nombres.
+Nous allons transformer cette méthode en fonction.
+ 
+A vous donc de combler la fonction isdigit() afin de vérifier si la chaîne de caractère que l'on passe (ici "1864274") 
+contient uniquement des nombres.
+Votre script doit dans ce cas-ci retourner True.
+Bien entendu, vous ne devez pas utiliser la méthode isgigit !
+
++ Aller plus loin: Vérifiez également si l'argument passé à la fonction est bien une chaîne de caractère afin
+d'éviter les erreurs (si par exemple l'utilisateur envoi une liste ou un boolean).
+
++ Astuces: Afin de vérifier chaque caractère de la chaîne de caractère, il vous faudra utiliser une boucle for.
+"""
+
+
+def isdigit(nombre):
+    for digit in nombre:
+        if digit not in ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]:
+            return False
+
+    return True
+
+
+print(isdigit("1854274"))
+
+"""
++ Autre solution possible:
+def isdigit(variable):
+  for i in variable:
+    if i not in [str(n) for n in range(10)]
+      return False
+      
+  return True
+
+print(isdigit("1854274")
+
++ Explication
+Dans cet exercice, on continue avec la création de fonctions et méthodes disponibles de base dans Python.
+Dans cet exercice, nous créons une fonction isdigit qui imite le comportement de la méthode isdigit, qui permet
+de vérifier si une chaîne de caractère est composée uniquement de chiffres.
+
+La première chose à faire était donc logiquement de créer une fonction isdigit qui accepte une variable en argument:
+def isdigit(variable):
+jusque là rien de bien compilqué.
+
+Ensuite, il faut que nous vérifions chaque caractère de la chaîne de caractère qui nous est passée en argument afin de
+savoir si c'est un chiffre ou non.
+Généralement pour vérifier si une chaîne de caractère est un nombre, on utilise la méthode isdigit. Ici, interdit de 
+l'utiliser, il va donc falloir faire autrement.
+
+Comment vérifier si une chaîne de caractère correspond à un chiffre?
+Facile, il suffit de vérifier s'il est égal à 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. Si c'est le cas, alors la chaîne de 
+caractère est bien un chiffre.
+
+Il nous faut donc créer une liste qui contient tous les chiffres de 0 à 9, ce que nous faisons avec la compréhension de 
+liste suivante [str(n) for n in range(10)]
+
+Nous convertissons directement chaque chiffre "n" récupéré dans la boucle en chaîne de caractère avec la fonction str,
+car dans notre boucle for, la variable i que nous récupérons est une chaîne de carctère.
+
+La compréhension de liste ci-dessus nous retourne donc une liste de tous les chiffres de 0 à 9 en chaîne de caractère:
+["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+Pour vérifier si la chaîne de caractère récupérée dans la variable "i" dans notre boucle for appartient ou non à cette
+liste, on utilise une sturcutre conditionnelle et la condition "in":
+if i not [str(n) for n in range(10)]:
+
+Ici, nous utilisons "not in" car la variable "i" n'est pas présente dans notre liste, alors cela veut dire que la chaîne
+de caractère passée à notre fonction contient un caractère qui n'est pas égal à un chiffre.
+
+Pas besoin d'aller plus loin donc et de passer en revue tous les caractères restants, nous pouvons arrêter la fonction
+directement à ce stade et retourner False.
+
+Si nous finissons la boucle for sans jamais avoir vérifié cette condition, cela signifie que nous n'avons rencontré 
+aucun cactère dans notre variable qui n'était pas un chiffre: notre variable ne contient donc que des chiffres et nous 
+pouvons retourner True.
+
++ Points importants à retenir
+1 - Pour créer rapidement et efficacement des listes, on peut utiliser des compréhensions de liste et la fonction range.
+2 - Pour vérifier si une variable est présente ou non dans une liste, on utilise "in" dans une condition: if variable in
+liste. La condition retournera True si la varialbe est présente dans la liste et False dans le cas contraire.
+"""
+print("\n Exercice83")
+"""
++ Notions abordées: les fonctions.
+On continue avec les fonctions et méthodes de base que l'on essaie de comprendre et de recréer. Cette fois-ci, on
+s'intéresse à la méthode join() qui permet de joindre plusieurs éléments d'une liste par une chaîne de caractère.
+
+Nous allons donc recréer cette méthode et la transformer en fonction. Votre fonction devra prendre comme premier 
+argument l'élément avec lequel vous voulez séparer les éléments de votre liste.
+
+A la place d'une liste, nous passrons ici directement à la fonction des chaînes de caractère à joindre ensemble.
+Votre fonction devra donc être appelée de la façon suivante:
+join(":", "Bonjour", "tout", "le", "monde")
+Et retournera la chaîne de caractère suivante:
+"Bonjour:tout:le:monde"
+"""
+
+
+def join(*mots):
+    phrase = ""
+
+    for word in range(1, len(mots)):
+        if word == 1:
+            phrase += mots[word]
+        else:
+            phrase += mots[0] + mots[word]
+    return phrase
+
+
+j = join(":", "Bonjour", "tout", "le", "monde")
+print(j)
+
+"""
++ Autre solution possible:
+def join(*args):
+  resultat = ""
+
+  separateur = args[0]
+  elements = args[1:]
+  
+  for element in elements:
+    resultat += element + separateur
+    
+  return resultat[:-1]
+  
+j = join(":", "Bonjour", "tout", "le", "monde")
+print(j)
+
++ Explication
+Le but de cet exercice était de recrée la méthode join, encore une fois en la transformant en fonction.
+
+La méthode join s'utilise sur une chaîne de caractère et permet de joindre plusieurs éléments d'une liste par la chaîne 
+de caractère en question. Par exemple: "-".join(["Bonjour", "tout", "le", "monde"]) pour joindre 4 mots dans la liste
+par des tirets.
+
+Nous allons donc recréer cette méthode en la transformant en fonction : en premier argument nous passerons le caractère
+de séparation, puis tous les autres arguments correspondront aux mots que l'on veut joindre ensemble.
+
+Notre fonction join pouvant accepter un nombre indéfini de paramètre, il nous faudra donc utiliser les "args":
+def join(args)
+
+Notez que ce qui est vraiment important ici c'est l'estérisque. Vous pourriez remplacer "args" par "robert" et votre
+code fonctionnerait également. args est une convention et nous allons donc l'utiliser.
+
+Cette syntaxe nous permet de passer un nombre indéfini d'arguments à notre fonction: ces arguments seront récupérables
+dans la liste "args" à l'intérieur de notre fonction.
+
+A l'intérieur de notre fonction, nous récupérons donc le premier élément de la liste args, qui correspondra au 
+séparateur utilisé pour joindre les arguments suivants:
+separateur = arg[0]
+
+Nous récupérons ensuite tous les arguments restants grâce à la syntaxe des slices:
+element = args[1:]
+
+Cette syntaxe indique que nous voulons récupérer tous les éléments à partir du 1er indice, jusqu'à la fin de la liste.
+Cela nous permet donc de récupérer dans ce cas-ci les mots "Bonjour", "tout", "le", "monde".
+
+Il ne nous reste plus qu'à joindre ensemble tous les éléments récupérés dans la liste "elements" par le séparateur
+contenu dans la variable "separateur". Nous avons défini au début de la fonction une variable "resultat" qui contient
+une chaîne de caractère vide.
+
+Nous allons passer à travers chaque élément grâce à une boucle for et ajouter un à un les éléments et le séparateur à la
+variable "resultat":
+
+for element in elements:
+  resultat += element + separateur
+
+A ce stade-ci, la variable "resultat" contient donc:
+
+"Bonjour:tout:le:monde:"
+
+Tout fonctionne à merveille, le seul problème est que nous avons un séparateur en trop à la fin de notre chaîne de 
+caractère. Nous allons donc retourner notre chaîne de caractère en enlevant le dernier caractère, là encore grâce aux
+slices, qui peuvent également être utilisés directement sur une chaîne de caractère (car une chaîne de caractère est
+comme une liste de caractère individuels):
+return resulat[:-1]
+
+Cette syntaxe indique que nous souhaitons récupérer tous les caractères de la chaîne de caractère sauf le dernier (-1).
+
++ Points importants à retenir
+1 - Pour envoyer et récupérer un nombre indéfini d'arguments à une fonction, on utilise *args.
+
+2 - Pour récupérer tous les éléments d'une liste sauf le premier, on utilise la syntaxe de slice[1:]
+
+3 - Pour récupérer tous les éléments d'une liste ou d'une chaîne de caractère sauf le dernier, on utilise la syntaxe
+de slice[:-1]
 
 """
