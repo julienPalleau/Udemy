@@ -3386,19 +3386,19 @@ Et retournera la chaîne de caractère suivante:
 """
 
 
-def join(*mots):
-    phrase = ""
-
-    for word in range(1, len(mots)):
-        if word == 1:
-            phrase += mots[word]
-        else:
-            phrase += mots[0] + mots[word]
-    return phrase
-
-
-j = join(":", "Bonjour", "tout", "le", "monde")
-print(j)
+# def join(*mots):
+#     phrase = ""
+#
+#     for word in range(1, len(mots)):
+#         if word == 1:
+#             phrase += mots[word]
+#         else:
+#             phrase += mots[0] + mots[word]
+#     return phrase
+#
+#
+# j = join(":", "Bonjour", "tout", "le", "monde")
+# print(j)
 
 """
 + Autre solution possible:
@@ -3459,7 +3459,7 @@ A ce stade-ci, la variable "resultat" contient donc:
 
 "Bonjour:tout:le:monde:"
 
-Tout fonctionne à merveille, le seul problème est que nous avons un séparateur en trop à la fin de notre chaîne de 
+Tout fonctionne à merveille, le seul problème est que nous avons un séparateur en trop à la fin de notre chaîne de
 caractère. Nous allons donc retourner notre chaîne de caractère en enlevant le dernier caractère, là encore grâce aux
 slices, qui peuvent également être utilisés directement sur une chaîne de caractère (car une chaîne de caractère est
 comme une liste de caractère individuels):
@@ -3475,4 +3475,51 @@ Cette syntaxe indique que nous souhaitons récupérer tous les caractères de la
 3 - Pour récupérer tous les éléments d'une liste ou d'une chaîne de caractère sauf le dernier, on utilise la syntaxe
 de slice[:-1]
 
+"""
+
+print("\n exercice 85")
+import os
+import string
+
+dossier = os.path.dirname(__file__)
+alphabet_dir = os.path.join(dossier, "alphabet")
+
+for letter in string.ascii_uppercase:
+    lettre_dir = os.path.join(alphabet_dir, letter)
+    if not os.path.isdir(lettre_dir):
+        os.makedirs(lettre_dir)
+
+"""" 
++ Autre solution possible (qui ne permet pas de choisir ou l'on creait le repertoire :-(
+import os
+for lettre in string.ascii_uppercase:
+    os.makedirs(f'/ alphabet / {lettre}')
+"""
+
+print("\n exercice 86")
+# https://www.udemy.com/course/python-exercices/learn/lecture/11731636#overview
+import os
+dossier = "/Utilisateurs/MOTTIER LUCIE/Documents"
+mot = "Python"
+for root, directories, files in os.walk("/Downloads"):
+    for file in files:
+        print(file)
+
+
+"""Autre solution possible:
+import os
+from glob import glob
+
+dossier = "/Utilisateurs/MOTTIER LUCIE/Documents"
+mot = "Python"
+
+fichiers = glob(f"{dossier}/**/*.txt", recursive = True)
+fichiers_trouves = []
+
+for filename in fichiers:
+    with open(filename, "r") = file.read()
+    if mot in contenu_fichier:
+      fichiers_trouves.append(filename)
+      
+print(fichiers_trouves)
 """
