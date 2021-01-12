@@ -3498,28 +3498,33 @@ for lettre in string.ascii_uppercase:
 
 print("\n exercice 86")
 # https://www.udemy.com/course/python-exercices/learn/lecture/11731636#overview
-import os
-dossier = "/Utilisateurs/MOTTIER LUCIE/Documents"
-mot = "Python"
-for root, directories, files in os.walk("/Downloads"):
-    for file in files:
-        print(file)
+# import os
+# dossier = "/Utilisateurs/MOTTIER LUCIE/Documents"
+# mot = "Python"
+# fichiers_trouves = []
+# for root, directories, files in os.walk(f"/Users/MOTTIER LUCIE/Documents"):
+#     with open(files, "r") = file.read()
+#     if mot not in contenu_fichier:
+#         fichiers_trouves.append(files)
+#
+# print(fichiers_trouves)
 
 
-"""Autre solution possible:
+"""Autre solution possible:"""
 import os
 from glob import glob
 
-dossier = "/Utilisateurs/MOTTIER LUCIE/Documents"
+dossier = "/Users/Mottier Lucie/Documents/Test"
 mot = "Python"
 
-fichiers = glob(f"{dossier}/**/*.txt", recursive = True)
+fichiers = glob(f"{dossier}/**/*.txt", recursive=True)
+
 fichiers_trouves = []
 
 for filename in fichiers:
-    with open(filename, "r") = file.read()
-    if mot in contenu_fichier:
-      fichiers_trouves.append(filename)
-      
+    with open(filename, "r") as file:
+        contenu_fichier = file.read()
+        if mot in contenu_fichier:
+            fichiers_trouves.append(filename)
+
 print(fichiers_trouves)
-"""
